@@ -29,28 +29,21 @@ image: https://cover.sli.dev
 
 - We color DOM elements
 - Battle tested in production
-- Open source (100% plain JS)
+- Open source 
+- 100% plain JS
 
 ---
 layout: center
 ---
 
-# wait...
-
----
-layout: center
-class: text-center
----
-
-# Coloring DOM elements isn't new!
-
+# Wait a moment...
 
 ---
 layout: center
 class: text-center
 ---
 
-# But doing it on users' devices on a heavily used B2C website is something no one did!
+# Coloring DOM elements ain't nothing new!
 
 
 ---
@@ -58,7 +51,18 @@ layout: center
 class: text-center
 ---
 
-# We transform pixels into bitmaps and bitmaps into coverage metrics
+# But...
+# ...doing it on users' devices on a high-traffic website is something no one did!
+
+
+---
+layout: center
+class: text-center
+---
+
+# We transform 
+# pixels into bitmaps 
+# and bitmaps into coverage metrics
 
 
 ---
@@ -89,7 +93,7 @@ layout: center
 class: text-center
 ---
 
-# Why Are We Doing This?
+# Why are we doing this?
 
 ---
 layout: image-right
@@ -102,6 +106,194 @@ image: https://cover.sli.dev
 
 
 ---
+layout: center
+class: text-center
+---
+
+# What data do DS teams usually use?
+
+---
+layout: center
+class: text-center
+---
+
+# Static Analysis 
+## How many times is a component used?
+
+---
+layout: image-left
+image: https://cover.sli.dev
+---
+
+Static analysis doesn't help us understand the impact on what users see!
 
 
-sds
+- 1000 button instances doesn't translate to 1000 buttons seen by the users
+  - Dead code
+  - Not all the pages are equally important
+- Data is collected per Product, not per page/feature
+
+---
+layout: center
+class: text-center
+---
+
+# Visual Coverage
+## How the DS impact the users?
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+- Different pages have different importance
+- Data is collected per page and per Product
+- Data can be grouped by team
+- Metrics that matter for your leadership
+
+---
+layout: center
+class: text-center
+---
+
+# A component's weight
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+- A component's weight is subjective to your Product
+- Smaller elements might weight more
+
+---
+layout: cover
+background: https://cover.sli.dev
+---
+
+## Finetune your components weight
+
+---
+layout: statement
+class: text-center
+---
+
+# When you calculate the coverage?
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+- E2E tests?
+- Story tests?
+- Coverage is limited
+- Adopting the coverage could affect the teams' velocity
+
+---
+layout: two-cols-header
+---
+
+# What about adding it straight to production?
+
+::left::
+
+- Calculating the coverage won't affect your teams
+- The DS team can operate independently
+- We have big numbers
+
+::right::
+
+- It must be done without impacting the UX
+- It requires careful performance optimizations
+- Preply already runs it in production
+
+---
+layout: center
+class: text-center
+---
+
+# Preply vs WorkWave use cases
+
+---
+layout: center
+class: text-center
+---
+
+# What do they have in common? 
+## Nothing, but the DS coverage works for both!
+
+---
+layout: two-cols
+---
+
+# Preply
+
+- A single Product
+- Many "connected" teams
+- Pages owned by multiple teams
+- Pages known in advance (by the DS team)
+- Full control over the DS components 
+
+
+::right::
+
+# WorkWave
+
+- Multiple independent Products
+- Many not "connected" teams
+- Pages owned by a single team
+- Pages not known in advance (by the DS team)
+- Partial control over the DS components
+
+---
+layout: center
+class: text-center
+---
+
+# It's not perfect...
+
+---
+layout: image-left
+image: https://cover.sli.dev
+---
+
+# ...but it works!
+
+- Collecting events in Production comes with a cost
+- The collected data is not stable (Thinks about the stock market)
+- It's a monitoring metric 
+  - It's hard to say "by implementing this component, we expect an increase of X %"
+- It complements static analysis, is not a replacement
+- It greatly helps you understand the impact of your DS
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+# React Native
+
+- No JS multi-threading
+- Luckily, Preply has a lot of E2E tests
+- [Worklets](https://developer.mozilla.org/en-US/docs/Web/API/Worklet) FTW
+
+
+---
+layout: image-right
+image: https://cover.sli.dev
+---
+
+# Progress so far
+
+- ✅ Battle tested in production at Preply
+- ✅ Detailed articles 
+- ✅ Open Source
+- 🚧 Implementing a devtool
+- 🚧 Scaling it at WorkWave
+
+---
+layout: end
+---
+
+# Thank You!
