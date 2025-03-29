@@ -1,11 +1,7 @@
-# Welcome to [Slidev](https://github.com/slidevjs/slidev)!
+# Design System Visual Coverage
 
-To start the slide show:
+Slides deck for the talk at the [JSDay 2025](https://www.jsday.it/talks_speakers/#DesignSystemVisualCoverageInWebAndApp(ReactNative)Applications) in Bologna.
 
-- `pnpm install`
-- `pnpm dev`
-- visit <http://localhost:3030>
+[See the slides]()
 
-Edit the [slides.md](./slides.md) to see the changes.
 
-Learn more about Slidev at the [documentation](https://sli.dev/).
