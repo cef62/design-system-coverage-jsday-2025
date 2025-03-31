@@ -12,7 +12,7 @@ transition: slide-left
 
 # Design System Visual Coverage
 
-A story of how to measure the impact of your design system in production!
+A story of how we measure the impact of our design systems in production!
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/xxxxx" target="_blank" class="slidev-icon-btn">
@@ -22,10 +22,10 @@ A story of how to measure the impact of your design system in production!
 
 ---
 layout: image-right
-image: https://cover.sli.dev
+image: ./assets/pixels.png
 ---
 
-# Paint over your DOM!
+# "Paint" over the DOM!
 
 - We color DOM elements
 - Battle tested in production
@@ -63,6 +63,11 @@ class: text-center
 # We transform 
 # pixels into bitmaps 
 # and bitmaps into coverage metrics
+<div style="display:flex; gap:8px;">
+  <img width="200" src="./assets/pixels.png" />
+  <img width="200" src="./assets/bitmap.png" />
+  <img width="200" src="./assets/metrics.png" />
+</div>
 
 
 ---
@@ -131,7 +136,7 @@ Static analysis doesn't help us understand the impact on what users see!
 - 1000 button instances doesn't translate to 1000 buttons seen by the users
   - Dead code
   - Not all the pages are equally important
-- Data is collected per Product, not per page/feature
+- Data is collected per codebase, not per page/feature
 
 ---
 layout: center
@@ -142,14 +147,15 @@ class: text-center
 ## How the DS impact the users?
 
 ---
-layout: image-right
-image: https://cover.sli.dev
+layout: center
 ---
 
 - Different pages have different importance
 - Data is collected per page and per Product
 - Data can be grouped by team
 - Metrics that matter for your leadership
+
+<img width="100%" src="./assets/dashboard.png" />
 
 ---
 layout: center
@@ -159,12 +165,13 @@ class: text-center
 # A component's weight
 
 ---
-layout: image-right
-image: https://cover.sli.dev
+layout: center
 ---
 
 - A component's weight is subjective to your Product
 - Smaller elements might weight more
+
+<img width="100%" src="./assets/pixels.png" />
 
 ---
 layout: cover
@@ -229,6 +236,8 @@ layout: two-cols
 
 # Preply
 
+- B2C
+- Millions of users
 - A single Product
 - Many "connected" teams
 - Pages owned by multiple teams
@@ -240,6 +249,8 @@ layout: two-cols
 
 # WorkWave
 
+- B2B
+- Thousands of clients
 - Multiple independent Products
 - Many not "connected" teams
 - Pages owned by a single team
@@ -254,11 +265,11 @@ class: text-center
 # It's not perfect...
 
 ---
-layout: image-left
-image: https://cover.sli.dev
+layout: center
 ---
 
-# ...but it works!
+
+<img width="100%" src="./assets/page-popularity.jpeg" />
 
 - Collecting events in Production comes with a cost
 - The collected data is not stable (Thinks about the stock market)
@@ -266,6 +277,8 @@ image: https://cover.sli.dev
   - It's hard to say "by implementing this component, we expect an increase of X %"
 - It complements static analysis, is not a replacement
 - It greatly helps you understand the impact of your DS
+
+# ...but it works!
 
 ---
 layout: image-right
