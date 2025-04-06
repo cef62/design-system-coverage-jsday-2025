@@ -17,9 +17,9 @@ export:
 favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png'
 ---
 
-The story of how we measure the impact of our design systems in production!
+<div class="text-white">The story of how we measure the impact of our design systems in production!</div>
 
-# Design System Visual Coverage
+# <div class="text-white">Design System Visual Coverage</div>
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/preply/design-system-visual-coverage" target="_blank" class="slidev-icon-btn">
@@ -39,7 +39,7 @@ layout: statement
 
 # Why
 
-### To measure the DS impact from a Product perspective
+## To measure the DS impact from a Product perspective
 
 <!--
 Let's start with a 1-min introduction before going into the project details.
@@ -85,7 +85,7 @@ layout: statement
 # How
 
 ### We calculate the coverage in users' devices 
-### by using _idle callbacks_, _web workers_, and _typed arrays_ 
+### by using <span class="text-red">_idle callbacks_</span>, <span class="text-red">_web workers_</span>, and <span class="text-red">_typed arrays_</span> 
 ### without affecting the UX.
 
 <!--
@@ -100,7 +100,7 @@ image: ./assets/images/stefano01.jpg
 ---
 
 # Stefano Magni 
-### Senior Front-end Engineer
+### <div class="text-orange">Senior Front-end Engineer</div>
 #### [@Preply](https://preply.com/)
 
 <br />
@@ -119,7 +119,7 @@ image: ./assets/images/matteo01.jpg
 ---
 
 # Matteo Ronchi
-### Frontend Architect
+### <div class="text-orange">Frontend Architect</div>
 #### [@WorkWave](https://www.workwave.com/)
 
 <br />
@@ -136,7 +136,7 @@ layout: intro
 ---
 
 # WHY
-#### Are we doing it
+#### <div class="text-red">are we doing it</div>
 
 ---
 layout: image-left
@@ -148,11 +148,13 @@ image: ./assets/images/meeting_01_a.png
 
 <v-clicks>
 
-## Traditional Product Teams 
-Measure the impact of their work through metrics like NPS, conversion rates..
+### Product teams:
+- We increased conversions by 10% 😍
+- We saved 100K $ 😍
+- Lifetime value increased by 1% 😍
 
-## Design Teams
-Lacks a metric to measure the impact of their work.
+### <div class="mt-10">DS team</div> 
+- Our shiny button is used 176 times 😥🤔
 
 </v-clicks>
 
@@ -168,14 +170,33 @@ layout: image-left
 image: ./assets/images/meeting_01_a.png
 ---
 
+# Measuring Impact 
+<br />
+
+### Product teams:
+- We increased conversions by 10% 😍
+- We saved 100K $ 😍
+- Lifetime value increased by 1% 😍
+
+### <div class="mt-10">DS team</div> 
+- ~~Our shiny button is used 176 times~~ 🤔
+- 40% of the UI is built with the DS 🤯👏
+
+
+
+---
+layout: image-left
+image: ./assets/images/meeting_01_a.png
+---
+
 # Static Analysis
 <br />
 
 <v-clicks>
 
-- Measuring the impact of a change in the codebase
-- Identifying the components most used 
-- Identifying the components requiring the most maintenance 
+- ### <div class="mb-4">Measuring the <span class="text-red">impact</span> of a change in the codebase</div>
+- ### <div class="mb-4">Identifying the components most used</div>
+- ### <div class="mb-4">Identifying the components requiring the <span class="text-red">most maintenance</span></div>
 
 - ## Those Metrics Are Not helping the leadership 
 
@@ -198,10 +219,10 @@ image: ./assets/images/meeting_01_b.png
 
 <v-clicks>
 
-- Measuring the impact on specific pages
-- Identifying the pages most impacted by the DS
-- Provides metrics that can be included in a Company's goals
-- Aligning with strategic objectives
+- ### <div class="mb-4">Measuring the impact on specific pages</div>
+- ### <div class="mb-4">Identifying the pages <span class="text-red">most impacted</span> by the DS</div>
+- ### <div class="mb-4">Provides metrics that can be included in a Company's goals</div>
+- ### <div class="mb-4">Aligning with <span class="text-red">strategic objectives</span></div>
 
 </v-clicks>
 
@@ -217,7 +238,7 @@ layout: intro
 ---
 
 # WHAT
-#### Are we doing
+#### <div class="text-red">are we doing</div>
 
 <!--
 That's why we started thinking about coloring the DOM elements directly on the actual web pages.
@@ -228,13 +249,15 @@ We made some POCs: should we measure the usage of the DS tokens? Of the DS compo
 layout: image-right
 image: ./assets/images/brainstorming.jpeg
 ---
+# Requirements
+<br /> 
 
 <v-clicks>
 
-- It must be visual
-- It must be easy to understand
-- It must not be technical
-- It must be independent from the Product teams
+- ### <div class="mb-4">It must be visual</div>
+- ### <div class="mb-4">It must be <span class="text-red">easy</span> to understand</div>
+- ### <div class="mb-4">It must not be technical</div>
+- ### <div class="mb-4">It must be <span class="text-red">independent</span> from the Product teams</div>
 
 </v-clicks>
 
@@ -243,7 +266,7 @@ image: ./assets/images/brainstorming.jpeg
 layout: center
 ---
 
-# We could color DOM elements..
+# We could <span class="text-red">color</span> DOM elements..
 
 ---
 layout: center
@@ -258,12 +281,12 @@ image: ./assets/images/under-construction.jpeg
 
 <v-clicks>
 
-- Should we measure the usage of the DS tokens?
-- Should we measure the usage of the DS components?
-- What do we want to measure?
-  - Areas
-  - Borders
-  - Or what?
+- ### <div class="mb-4">Should we measure the usage of the <span class="text-red">DS tokens?</span></div>
+- ### <div class="mb-4">Should we measure the usage of the <span class="text-red">DS components?</span></div>
+- ### <div class="mb-2">What do we want to measure?</div>
+  - ### <div class="mb-2">Areas</div>
+  - ### <div class="mb-2 text-red">Borders</div>
+  - ### <div class="mb-2">Or what?</div>
 
 </v-clicks>
 
@@ -271,14 +294,14 @@ image: ./assets/images/under-construction.jpeg
 layout: center
 ---
 
-# We could draw lines around the components
+# We could draw <span class="text-red">lines</span> around the components
 
 ---
 layout: image-left
 image: ./assets/images/draw-lines.jpeg
 ---
 
-The visual coverage formula is:
+### <div class="mb-4">The visual coverage formula is:</div>
 
 ```
 green pixels / (green pixels + red pixels)
@@ -287,8 +310,8 @@ green pixels / (green pixels + red pixels)
 
 <v-clicks>
 
-- It's a percentage value
-- It directly measures what the user sees
+- ### <div class="mt-10 mb-4">It's a percentage value</div>
+- ### <div class="mb-4">It directly measures what the user sees</div>
 
 </v-clicks>
 
@@ -308,7 +331,7 @@ The leadership team liked the idea.
 layout: center
 ---
 
-# The leadership team liked the idea!
+# The leadership team <span class="text-red">liked</span> the idea!
 
 ---
 layout: center
@@ -321,7 +344,7 @@ layout: cover
 background: ./assets/images/component-weight.png
 ---
 
-# Not all the components' weights are the same
+# Not all the components' <span class="text-red">weights</span> are the same
 
 
 ---
@@ -331,9 +354,9 @@ image: ./assets/images/draw-lines.jpeg
 
 <v-clicks>
 
-- The coverage must express the impact on the user
-- Components have different weights
-- The weight of a component is subjective and unique per Product
+- ### <div class="mb-4">The coverage must express the <span class="text-red">impact</span> on the user</div>
+- ### <div class="mb-4">Components have different weights</div>
+- ### <div class="mb-4">The weight of a component is <span class="text-red">subjective</span> and unique per <span class="text-red">Product</span></div>
 
 </v-clicks>
 
@@ -360,8 +383,8 @@ image: ./assets/images/draw-lines.jpeg
 
 <v-clicks>
 
-- ### Multiple teams can work on the same pages
-- ### A page coverage must be calculated per team
+- ### <div class="mb-4">Multiple <span class="text-red">teams</span> can work on the same pages</div>
+- ### <div class="mb-4">A page coverage must be calculated per <span class="text-red">team</span></div>
 
 
 <!--
@@ -377,7 +400,7 @@ layout: intro
 ---
 
 # HOW
-#### Are we doing it
+#### <span class="text-red">are we doing it</span>
 
 ---
 layout: image-left
@@ -389,9 +412,9 @@ image: ./assets/images/wip.jpeg
 
 <v-clicks>
 
-- ### Color the borders via CSS
-- ### Transform DOM into a PNG
-- ### Count the pixels
+- ### <div class="mb-4">Color the <span class="text-red">borders</span> via CSS</div>
+- ### <div class="mb-4">Transform DOM into a PNG</div>
+- ### <div class="mb-4">Count the <span class="text-red">pixels</span></div>
 
 </v-clicks>
 
@@ -410,12 +433,12 @@ image: ./assets/images/wip.jpeg
 
 <v-clicks>
 
-- ### Yes!
-- ### But it was slow
-- ### It took up to 5 seconds on a high-end device...
-- ### ...for a single page
-- ### and it was blocking the main thread
-- ### No way to run it on any CI pipeline
+- ### <div class="mb-4">Yes!</div>
+- ### <div class="mb-4">But it was slow</div>
+- ### <div class="mb-4">It took up to <span class="text-red">5 seconds</span> on a high-end device...</div>
+- ### <div class="mb-4">...for a single page</div>
+- ### <div class="mb-4">and it was <span class="text-red">blocking</span> the main thread</div>
+- ### <div class="mb-4">No way to run it on any CI pipeline</div>
 
 </v-clicks>
 
@@ -434,7 +457,7 @@ layout: intro
 
 <v-clicks>
 
-# ...we change strategy?
+# ...we change <span class="text-red">strategy</span>?
 
 </v-clicks>
 
@@ -454,11 +477,11 @@ image: ./assets/images/change-of-strategy.png
 
 <v-clicks>
 
-- ### If we make the process fast enough
-- ### Without blocking the main thread
-- ### We could run it in production
-- ### Measure the coverage in real time 
-- ### On the users' devices
+- ### <div class="mb-4">If we make the process <span class="text-red">fast enough</span></div>
+- ### <div class="mb-4">Without blocking the main thread</div>  
+- ### <div class="mb-4">We could run it in <span class="text-red">production</span></div>
+- ### <div class="mb-4">Measure the coverage in <span class="text-red">real time</span></div> 
+- ### <div class="mb-4">On the users' devices</div>
 
 </v-clicks>
 
@@ -476,11 +499,11 @@ image: ./assets/images/wip.jpeg
 
 <v-clicks>
 
-- Users navigate to all the pages (the CI covers mostly happy paths)
-- Measuring what the users see aligns with the business goals
-- More significant data set to collect
-- <div class="text-2xl mt-8 mb-4 text-red">Unexpected bonus</div>
-- Independence from the Product teams
+- ### <div class="mb-4">Users navigate to all the pages (the CI covers mostly happy paths)</div>
+- ### <div class="mb-4">Measuring what the users see aligns with the business goals</div>
+- ### <div class="mb-4">More significant data set to collect</div>
+- ### <div class="mb-4"><div class="text-2xl text-red">Unexpected bonus</div></div>
+- ### <div class="mb-4">Independence from the Product teams</div>
 
 </v-clicks>
 
@@ -499,7 +522,7 @@ src: ./pages/bitmap-animation.md
 layout: statement
 ---
 
-# It's a two-steps process
+# It's a <span class="text-red">two-steps</span> process
 
 <!-- 
 Let's look at how we implemented it.
@@ -518,9 +541,9 @@ image: ./assets/images/wip.jpeg
 
 <v-clicks>
 
-- ### Traverse the DOM 
-- ### Collect elements' size and position
-- ### Detect which elements are part of the DS
+- ### <div class="mb-4">Traverse the DOM </div>
+- ### <div class="mb-4">Collect elements' size and position</div>
+- ### <div class="mb-4">Detect which elements are part of the DS</div>
 
 </v-clicks>
 
@@ -534,10 +557,10 @@ image: ./assets/images/wip.jpeg
 
 <v-clicks>
 
-- ### Traverse using [Idle Callbacks](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback)
-- ### The browser provides a time window to act
-- ### The parser pause and resume as needed
-- ### The parser accepts incomplete DOM trees
+- ### <div class="mb-4">Traverse using [Idle Callbacks](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback)</div>
+- ### <div class="mb-4">The browser provides a time window to act</div>
+- ### <div class="mb-4">The parser <span class="text-red">pauses and resumes</span> as needed</div>
+- ### <div class="mb-4">The parser <span class="text-red">accepts</span> incomplete DOM trees</div>
 
 </v-clicks>
 
@@ -560,11 +583,11 @@ image: ./assets/images/wip.jpeg
 
 <v-clicks>
 
-- ### Transform the parsed DOM into a bi-dimensional array
-- ### The bitmap has the same size of the viewport
-- ### Pixels are color-coded 
-- ### The closest-to-the-user elements are drawn on top
-- ### A component's weight affects the border thickness
+- ### <div class="mb-4">Transform the parsed DOM into a <span class="text-red">bi-dimensional array</span></div>
+- ### <div class="mb-4">The bitmap has the same size of the viewport</div>
+- ### <div class="mb-4">Pixels are <span class="text-red">color-coded</span></div>
+- ### <div class="mb-4">The closest-to-the-user elements are drawn on top</div>
+- ### <div class="mb-4">A component's weight affects the <span class="text-red">border thickness</span></div>
 
 </v-clicks>
 
@@ -585,11 +608,11 @@ image: ./assets/images/wip.jpeg
 
 <v-clicks>
 
-- ### We got help from an expert: **Massimiliano Mantione**
-- ### Transform the array to be mono-dimensional
-- ### Switch to `Typed Arrays`
-- ### Make the code branch-free, removing most conditional statements
-- ### Run the bitmap drawing in a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
+- ### <div class="mb-4">We got help from an expert: **Massimiliano Mantione**</div>
+- ### <div class="mb-4">Transform the array to be <span class="text-red">mono-dimensional</span></div>
+- ### <div class="mb-4">Switch to <span class="text-red">Typed Arrays</span></div>
+- ### <div class="mb-4">Make the code branch-free, removing most conditional statements</div>
+- ### <div class="mb-4">Run the bitmap drawing in a <span class="text-red">[Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)</span></div>
 
 </v-clicks>
 
@@ -645,8 +668,8 @@ image: ./assets/images/wip.jpeg
 <v-clicks>
 
 - ### <div class="mb-10">It run in production</div>
-- ### <div class="mb-10">It gives real time data</div>
-- ### <div class="mb-10">It provides great insights for the Leadership</div>
+- ### <div class="mb-10">It gives real <span class="text-red">time data</span></div>
+- ### <div class="mb-10">It provides great <span class="text-red">insights</span> for the Leadership</div>
 
 </v-clicks>
 
@@ -680,11 +703,11 @@ layout: default
 
 - ### <div class="mb-4">It can run on any web application</div>
 - ### <div class="mb-4">**Preply** and **WorkWave** use it already</div>
-- ### <div class="mb-2">It's configurable</div>
+- ### <div class="mb-2">It's <span class="text-red">configurable</span></div>
   - ### <div class="mb-2">You are responsible to identify the DS components</div>
   - ### <div class="mb-4">You are responsible to set the components' weight</div>
 - ### <div class="mb-4">You can split the page into different containers</div>
-- ### <div class="mb-4 text-green">It's Open Source</div>
+- ### <div class="mb-4">It's <span class="text-green">Open Source</span></div>
 
 </v-clicks>
 
@@ -697,10 +720,10 @@ layout: default
 
 <v-clicks>
 
-- ### <div class="mb-4">Collecting data in production comes with some cost</div>
-- ### <div class="mb-4">The coverage data change over-time *(thinks of the stock market)* </div>
+- ### <div class="mb-4">Collecting data in production comes with <span class="text-red">some cost</span></div>
+- ### <div class="mb-4">The coverage data change over-time <span class="text-yellow">*(thinks of the stock market)*</span></div>
 - ### <div class="mb-4">It complements static analysis</div>
-- ### <div class="mb-2">It's a monitoring metric</div>
+- ### <div class="mb-2">It's a <span class="text-red">monitoring</span> metric</div>
   - ### <div class="mb-4">You can check the trends only after publishing a page</div>
 
 </v-clicks>
@@ -719,15 +742,36 @@ layout: default
 - ### <div class="mb-4">✅ Open Source the project –[GitHub](https://github.com/preply/design-system-visual-coverage)</div>
 - ### <div class="mb-4">🚧 Implementing a devtool</div>
 - ### <div class="mb-4">🚧 Scaling it at WorkWave</div>
-- ### <div class="mb-4">🚧 Helping Docplanner and Monday.com to adopt it</div>
+- ### <div class="mb-4">🚧 Helping <span class="text-red">Docplanner</span> and <span class="text-red">Monday.com</span> to adopt it</div>
 
 </v-clicks>
+
+---
+layout: default
+---
+
+# What about React Native? 
+<br />
+
+<v-clicks>
+
+- ### <div class="mb-4">It doesn't offer the same convenient <span class="text-red">worker APIs</span></div>
+- ### <div class="mb-4">It doesn't offer a way to query the DOM yet</div>
+- ### <div class="mb-4">For now, we run the coverage in <span class="text-red">E2E tests</span></div>
+- ### <div class="mb-8">A small <span class="text-red">Swift</span> script extract the available view coordinates</div>
+- ### <div class="mb-2">In the future</div>
+  - ### <div class="mb-2">`worklets`</div>
+  - ### <div class="mb-2">`react-stric-dom`</div>
+  - ### <div class="mb-2">Could simplify the process</div>
+
+</v-clicks>
+
 
 ---
 layout: statement
 ---
 
-## Feedback
+## <span class="text-red">Thank you!</span>
 <br />
 
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 1rem;">
