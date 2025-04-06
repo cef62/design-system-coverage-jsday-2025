@@ -45,13 +45,20 @@ So, we needed a metric that measures the DS impact from a product and user persp
 -->
 
 ---
-layout: statement
+layout: two-cols
 ---
 
 # What
 
 ### We measure how much % of a page 
 ### is built with DS components.
+
+::right::
+
+<SlidevVideo autoplay autoreset='click'>
+  <!-- Anything that can go in an HTML video element. -->
+  <source src="./assets/slowmo1.mov" type="video/mp4" />
+</SlidevVideo>
 
 <!--
 MISSING VIDEO BACKGROUND
