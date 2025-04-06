@@ -7,7 +7,14 @@ drawings:
   persist: false
 # enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
-# transition: slide-left
+exportFilename: design-coverage-jsday-2025
+download: true
+export:
+  format: pdf
+  dark: true
+  withClicks: true
+  withToc: false
+favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png'
 ---
 
 The story of how we measure the impact of our design systems in production!
@@ -491,10 +498,126 @@ image: ./assets/images/wip.jpeg
 
 <v-clicks>
 
-- ### Transform the parsed DOM into a bi-dimensional array
-- ### The bitmap has the same size of the viewport
-- ### Pixels are color-coded 
-- ### The closest-to-the-user elements are drawn on top
-- ### A component's weight affects the border thickness
+- ### We got help from an expert: **Massimiliano Mantione**
+- ### Transform the array to be mono-dimensional
+- ### Switch to `Typed Arrays`
+- ### Make the code branch-free, removing most conditional statements
+- ### Run the bitmap drawing in a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 
 </v-clicks>
+
+---
+layout: statement
+---
+
+# This is all great, but...
+
+<v-clicks>
+
+# ...show me the numbers!
+
+</v-clicks>
+
+---
+layout: image-right
+image: ./assets/images/wip.jpeg
+---
+
+<v-clicks>
+
+- ### <div class="mb-10">❌ The initial implementation took `5 blocking seconds` </div>
+- ### <div class="mb-10">🚧 The first bitmap-based version took `50 blocking ms`, and `30MB` of memory </div>
+- ### <div class="mb-14">✅ The final version took `35 non-blocking ms`, and `0.3 MB` of memory </div>
+- ### ℹ *The Huawei P9 takes `900 non-blocking ms` on a big page*
+
+</v-clicks>
+
+---
+layout: statement
+---
+
+# Was it worth it?
+
+---
+layout: image-right
+image: ./assets/images/wip.jpeg
+---
+
+# Yes!  
+<br />
+
+<v-clicks>
+
+- ### <div class="mb-10">It run in production</div>
+- ### <div class="mb-10">It gives real time data</div>
+- ### <div class="mb-10">It provides great insights for the Leadership</div>
+
+</v-clicks>
+
+
+---
+layout: default
+---
+
+# Advantages
+<br />
+
+<v-clicks>
+
+- ### <div class="mb-4">It can run on any web application</div>
+- ### <div class="mb-4">**Preply** and **WorkWave** use it already</div>
+- ### <div class="mb-2">It's configurable</div>
+  - ### <div class="mb-2">You are responsible to identify the DS components</div>
+  - ### <div class="mb-4">You are responsible to set the components' weight</div>
+- ### <div class="mb-4">You can split the page into different containers</div>
+- ### <div class="mb-4 text-green">It's Open Source</div>
+
+</v-clicks>
+
+---
+layout: default
+---
+
+# Things to consider
+<br />
+
+<v-clicks>
+
+- ### <div class="mb-4">Collecting data in production comes with some cost</div>
+- ### <div class="mb-4">The coverage data change over-time *(thinks of the stock market)* </div>
+- ### <div class="mb-4">It complements static analysis</div>
+- ### <div class="mb-2">It's a monitoring metric</div>
+  - ### <div class="mb-4">You can check the trends only after publishing a page</div>
+
+</v-clicks>
+
+---
+layout: default
+---
+
+# The progress so far
+<br />
+
+<v-clicks>
+
+- ### <div class="mb-4">✅ Preply battle tested in production (1+ year)</div>
+- ### <div class="mb-4">✅ Detailed articles: [here](https://dev.to/noriste/visual-coverage-why-and-how-preply-measures-the-impact-of-the-design-system-part-i-3omb) and [here](https://dev.to/noriste/the-implementation-details-of-preplys-design-system-visual-coverage-part-ii-1ao2)</div>
+- ### <div class="mb-4">✅ Open Source the project –[GitHub](https://github.com/preply/design-system-visual-coverage)</div>
+- ### <div class="mb-4">🚧 Implementing a devtool</div>
+- ### <div class="mb-4">🚧 Scaling it at WorkWave</div>
+- ### <div class="mb-4">🚧 Helping Docplanner and Monday.com to adopt it</div>
+
+</v-clicks>
+
+---
+layout: statement
+---
+
+## Feedback
+<br />
+
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 1rem;">
+  <img src="./assets/qrcode.png" width="30%" />
+</div>
+
+[grusp.org/agenda](https://grusp.org/agenda)
