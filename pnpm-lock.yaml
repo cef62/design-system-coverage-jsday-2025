@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@slidev/cli':
         specifier: ^51.4.0
-        version: 51.4.0(@babel/parser@7.27.0)(@nuxt/kit@3.16.1)(@types/markdown-it@14.1.2)(@types/node@18.19.84)(@vue/compiler-sfc@3.5.13)(markdown-it-async@2.2.0)(postcss@8.5.3)(tsx@4.19.3)(vue-template-compiler@2.7.16)(vue-template-es2015-compiler@1.9.1)
+        version: 51.4.0(@babel/parser@7.27.0)(@nuxt/kit@3.16.1)(@types/markdown-it@14.1.2)(@types/node@18.19.84)(@vue/compiler-sfc@3.5.13)(markdown-it-async@2.2.0)(playwright-chromium@1.51.1)(postcss@8.5.3)(tsx@4.19.3)(vue-template-compiler@2.7.16)(vue-template-es2015-compiler@1.9.1)
       '@slidev/theme-apple-basic':
         specifier: 0.25.1
         version: 0.25.1
@@ -22,13 +22,17 @@ importers:
         version: 0.25.0
       slidev-theme-light-icons:
         specifier: 1.0.2
-        version: 1.0.2(@slidev/client@51.4.0(@nuxt/kit@3.16.1)(@vue/compiler-sfc@3.5.13)(markdown-it-async@2.2.0)(postcss@8.5.3)(vite@2.9.18)(vue-template-compiler@2.7.16)(vue-template-es2015-compiler@1.9.1))(shiki@3.2.1)(typescript@5.8.2)(vue-template-compiler@2.7.16)
+        version: 1.0.2(@slidev/client@51.4.0(@nuxt/kit@3.16.1)(@vue/compiler-sfc@3.5.13)(markdown-it-async@2.2.0)(postcss@8.5.3)(vite@2.9.18)(vue-template-compiler@2.7.16)(vue-template-es2015-compiler@1.9.1))(playwright-chromium@1.51.1)(shiki@3.2.1)(typescript@5.8.2)(vue-template-compiler@2.7.16)
       slidev-theme-mint:
         specifier: 0.1.0
         version: 0.1.0(@nuxt/kit@3.16.1)(@vue/compiler-sfc@3.5.13)(postcss@8.5.3)(rollup@4.37.0)(typescript@5.8.2)(vite@2.9.18)(vue-template-compiler@2.7.16)(vue-template-es2015-compiler@1.9.1)
       vue:
         specifier: ^3.5.13
         version: 3.5.13(typescript@5.8.2)
+    devDependencies:
+      playwright-chromium:
+        specifier: 1.51.1
+        version: 1.51.1
 
 packages:
 
@@ -3660,6 +3664,16 @@ packages:
   plantuml-encoder@1.4.0:
     resolution: {integrity: sha512-sxMwpDw/ySY1WB2CE3+IdMuEcWibJ72DDOsXLkSmEaSzwEUaYBT6DWgOfBiHGCux4q433X6+OEFWjlVqp7gL6g==}
 
+  playwright-chromium@1.51.1:
+    resolution: {integrity: sha512-IQpN8lgv/fx++WRxT8ITZylDwYAamd3Fv5H9g2AWsicp0N829L1oXHziK/6l9h/TMxioSTqc4ifPiZLS8nITxw==}
+    engines: {node: '>=18'}
+    hasBin: true
+
+  playwright-core@1.51.1:
+    resolution: {integrity: sha512-/crRMj8+j/Nq5s8QcvegseuyeZPxpQCZb6HNk3Sos3BlZyAknRjoyJPFWkpNn8v0+P3WiwqFF8P+zQo4eqiNuw==}
+    engines: {node: '>=18'}
+    hasBin: true
+
   points-on-curve@0.2.0:
     resolution: {integrity: sha512-0mYKnYYe9ZcqMCWhUjItv/oHjvgEsfKvnUTg8sAtnHr3GVy7rGkXCb6d5cSyqrWqL4k81b9CPg3urd+T7aop3A==}
 
@@ -5632,7 +5646,7 @@ snapshots:
   '@sindresorhus/merge-streams@2.3.0':
     optional: true
 
-  '@slidev/cli@0.7.4(typescript@5.8.2)(vue-template-compiler@2.7.16)':
+  '@slidev/cli@0.7.4(playwright-chromium@1.51.1)(typescript@5.8.2)(vue-template-compiler@2.7.16)':
     dependencies:
       '@antfu/utils': 0.1.7
       '@iconify/json': 1.1.461
@@ -5667,6 +5681,8 @@ snapshots:
       vue: 3.5.13(typescript@5.8.2)
       windicss: 3.5.6
       yargs: 17.7.2
+    optionalDependencies:
+      playwright-chromium: 1.51.1
     transitivePeerDependencies:
       - '@vue/composition-api'
       - less
@@ -5676,7 +5692,7 @@ snapshots:
       - typescript
       - vue-template-compiler
 
-  '@slidev/cli@51.4.0(@babel/parser@7.27.0)(@nuxt/kit@3.16.1)(@types/markdown-it@14.1.2)(@types/node@18.19.84)(@vue/compiler-sfc@3.5.13)(markdown-it-async@2.2.0)(postcss@8.5.3)(tsx@4.19.3)(vue-template-compiler@2.7.16)(vue-template-es2015-compiler@1.9.1)':
+  '@slidev/cli@51.4.0(@babel/parser@7.27.0)(@nuxt/kit@3.16.1)(@types/markdown-it@14.1.2)(@types/node@18.19.84)(@vue/compiler-sfc@3.5.13)(markdown-it-async@2.2.0)(playwright-chromium@1.51.1)(postcss@8.5.3)(tsx@4.19.3)(vue-template-compiler@2.7.16)(vue-template-es2015-compiler@1.9.1)':
     dependencies:
       '@antfu/ni': 24.3.0
       '@antfu/utils': 9.1.0
@@ -5747,6 +5763,8 @@ snapshots:
       vue: 3.5.13(typescript@5.8.2)
       yaml: 2.7.0
       yargs: 17.7.2
+    optionalDependencies:
+      playwright-chromium: 1.51.1
     transitivePeerDependencies:
       - '@babel/parser'
       - '@nuxt/kit'
@@ -9400,6 +9418,12 @@ snapshots:
 
   plantuml-encoder@1.4.0: {}
 
+  playwright-chromium@1.51.1:
+    dependencies:
+      playwright-core: 1.51.1
+
+  playwright-core@1.51.1: {}
+
   points-on-curve@0.2.0: {}
 
   points-on-path@0.2.1:
@@ -9894,9 +9918,9 @@ snapshots:
   slash@5.1.0:
     optional: true
 
-  slidev-theme-light-icons@1.0.2(@slidev/client@51.4.0(@nuxt/kit@3.16.1)(@vue/compiler-sfc@3.5.13)(markdown-it-async@2.2.0)(postcss@8.5.3)(vite@2.9.18)(vue-template-compiler@2.7.16)(vue-template-es2015-compiler@1.9.1))(shiki@3.2.1)(typescript@5.8.2)(vue-template-compiler@2.7.16):
+  slidev-theme-light-icons@1.0.2(@slidev/client@51.4.0(@nuxt/kit@3.16.1)(@vue/compiler-sfc@3.5.13)(markdown-it-async@2.2.0)(postcss@8.5.3)(vite@2.9.18)(vue-template-compiler@2.7.16)(vue-template-es2015-compiler@1.9.1))(playwright-chromium@1.51.1)(shiki@3.2.1)(typescript@5.8.2)(vue-template-compiler@2.7.16):
     dependencies:
-      '@slidev/cli': 0.7.4(typescript@5.8.2)(vue-template-compiler@2.7.16)
+      '@slidev/cli': 0.7.4(playwright-chromium@1.51.1)(typescript@5.8.2)(vue-template-compiler@2.7.16)
       '@slidev/theme-default': 0.7.9(@slidev/client@51.4.0(@nuxt/kit@3.16.1)(@vue/compiler-sfc@3.5.13)(markdown-it-async@2.2.0)(postcss@8.5.3)(vite@2.9.18)(vue-template-compiler@2.7.16)(vue-template-es2015-compiler@1.9.1))(shiki@3.2.1)
       light-icons: 1.0.12
     transitivePeerDependencies:

@@ -134,7 +134,7 @@ layout: intro
 
 ---
 layout: image-left
-image: ./assets/images/meeting_01_a.png
+image: ./assets/images2/meeting_01.png
 ---
 
 # Measuring Impact 
@@ -161,7 +161,7 @@ One big difference between Platform teams and Product/Feature teams is how they 
 
 ---
 layout: image-left
-image: ./assets/images/meeting_01_a.png
+image: ./assets/images2/meeting_02.png
 ---
 
 # Measuring Impact 
@@ -174,13 +174,18 @@ image: ./assets/images/meeting_01_a.png
 
 ### <div class="mt-10">DS team</div> 
 - ~~Our shiny button is used 176 times~~ 🤔
+
+<v-clicks>
+
 - 40% of the UI is built with the DS 🤯👏
+
+</v-clicks>
 
 
 
 ---
 layout: image-left
-image: ./assets/images/meeting_01_a.png
+image: ./assets/images2/static-analysis.jpeg
 ---
 
 # Static Analysis
@@ -205,7 +210,7 @@ But this tells nothing to the leadership team!
 
 ---
 layout: image-left
-image: ./assets/images/meeting_01_b.png
+image: ./assets/images2/heat-map2.jpeg
 ---
 
 # Visual Coverage
@@ -270,7 +275,7 @@ layout: center
 
 ---
 layout: image-right
-image: ./assets/images/under-construction.jpeg
+image: ./assets/images2/mad-scientist.jpeg
 ---
 
 <v-clicks>
@@ -292,7 +297,7 @@ layout: center
 
 ---
 layout: image-left
-image: ./assets/images/draw-lines.jpeg
+image: ./assets/images2/draw-lines1.png
 ---
 
 ### <div class="mb-4">The visual coverage formula is:</div>
@@ -343,7 +348,7 @@ background: ./assets/images/component-weight.png
 
 ---
 layout: image-left
-image: ./assets/images/draw-lines.jpeg
+image: ./assets/images2/draw-lines2.png
 ---
 
 <v-clicks>
@@ -372,7 +377,7 @@ layout: statement
 
 ---
 layout: image-left
-image: ./assets/images/draw-lines.jpeg
+image: ./assets/images2/draw-lines0.png
 ---
 
 <v-clicks>
@@ -397,8 +402,7 @@ layout: intro
 #### <span class="text-red">are we doing it</span>
 
 ---
-layout: image-left
-image: ./assets/images/wip.jpeg
+layout: default
 ---
 
 # First attempt
@@ -418,8 +422,7 @@ We were converting the whole page to a png and then count the pixels.
 -->
 
 ---
-layout: image-left
-image: ./assets/images/wip.jpeg
+layout: default
 ---
 
 # Did it work?
@@ -484,8 +487,7 @@ Sounds like a crazy idea? Think about it!
 -->
 
 ---
-layout: image-right
-image: ./assets/images/wip.jpeg
+layout: default
 ---
 
 # A few benefits
@@ -494,7 +496,7 @@ image: ./assets/images/wip.jpeg
 <v-clicks>
 
 - ### <div class="mb-4">Users navigate to all the pages (the CI covers mostly happy paths)</div>
-- ### <div class="mb-4">Measuring what the users see aligns with the business goals</div>
+- ### <div class="mb-4">Measuring what the users see aligns with the <span class="text-red">business goals</span></div>
 - ### <div class="mb-4">More significant data set to collect</div>
 - ### <div class="mb-4"><div class="text-2xl text-red">Unexpected bonus</div></div>
 - ### <div class="mb-4">Independence from the Product teams</div>
@@ -527,7 +529,7 @@ The DS visual coverage is made of two steps:
 
 ---
 layout: image-left
-image: ./assets/images/wip.jpeg
+image: ./assets/images2/analyze.jpeg
 ---
 
 # Analyze
@@ -543,7 +545,7 @@ image: ./assets/images/wip.jpeg
 
 ---
 layout: image-left
-image: ./assets/images/wip.jpeg
+image: ./assets/images2/optimize.jpeg
 ---
 
 # Optimize the parser
@@ -569,7 +571,7 @@ This is the idea:
 
 ---
 layout: image-right
-image: ./assets/images/wip.jpeg
+image: ./assets/images2/bitmap.jpeg
 ---
 
 # Draw the bitmap
@@ -594,7 +596,7 @@ Regarding the bitmap:
 
 ---
 layout: image-right
-image: ./assets/images/wip.jpeg
+image: ./assets/images2/bitmap2.jpeg
 ---
 
 # Bitmap Optimization
@@ -632,13 +634,12 @@ layout: statement
 </v-clicks>
 
 ---
-layout: image-right
-image: ./assets/images/wip.jpeg
+layout: default
 ---
 
 <v-clicks>
 
-- ### <div class="mb-10">❌ The initial implementation took `5 blocking seconds` </div>
+- ### <div class="mt-10 mb-10">❌ The initial implementation took `5 blocking seconds` </div>
 - ### <div class="mb-10">🚧 The first bitmap-based version took `50 blocking ms`, and `30MB` of memory </div>
 - ### <div class="mb-14">✅ The final version took `35 non-blocking ms`, and `0.3 MB` of memory </div>
 - ### ℹ *The Huawei P9 takes `900 non-blocking ms` on a big page*
@@ -653,7 +654,7 @@ layout: statement
 
 ---
 layout: image-right
-image: ./assets/images/wip.jpeg
+image: ./assets/images2/happy-scientist.jpeg
 ---
 
 # Yes!  
@@ -774,4 +775,4 @@ layout: statement
 
 [grusp.org/<span class="text-red">agenda</span>](https://grusp.org/agenda)
 
-[Careers at <span class="text-red">Preply</span>](https://preply.com/en/careers) <div style="display: inline-flex; width: 50%;"></div> [Careers at <span class="text-red">WorkWave</span>](https://careers.workwave.com/)
+[Careers at <span class="text-red">Preply</span>](https://preply.com/en/careers) <span style="display: inline-flex; width: 50%;"></span> [Careers at <span class="text-red">WorkWave</span>](https://careers.workwave.com/)
