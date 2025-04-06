@@ -186,10 +186,6 @@ Usually, DS teams rely on static analysis.
 By Statically analyzing the codebases we can tell that our amazing button is used 1000 times... 
 
 But this tells nothing to the leadership team! 
-How are they supposed to be able to compare DS teams with other initiative? 
-How can DS teams prove its value and asl for more investments?
-
-We must be able to tell them how much % of the UI is built with the DS!
 -->
 
 ---
@@ -204,10 +200,17 @@ image: ./assets/images/meeting_01_b.png
 
 - Measuring the impact on specific pages
 - Identifying the pages most impacted by the DS
-- Provides metrics directly related to revenue and Company's goals
+- Provides metrics that can be included in a Company's goals
 - Aligning with strategic objectives
 
 </v-clicks>
+
+<!--
+How are they supposed to be able to compare DS teams with other initiative? 
+How can DS teams prove its value and asl for more investments?
+
+We must be able to tell them how much % of the UI is built with the DS!
+-->
 
 ---
 layout: intro
@@ -215,6 +218,11 @@ layout: intro
 
 # WHAT
 #### Are we doing
+
+<!--
+That's why we started thinking about coloring the DOM elements directly on the actual web pages.
+We made some POCs: should we measure the usage of the DS tokens? Of the DS components? Should we measure components' areas? perimeters?
+-->
 
 ---
 layout: image-right
@@ -229,6 +237,7 @@ image: ./assets/images/brainstorming.jpeg
 - It must be independent from the Product teams
 
 </v-clicks>
+
 
 ---
 layout: center
@@ -251,7 +260,6 @@ image: ./assets/images/under-construction.jpeg
 
 - Should we measure the usage of the DS tokens?
 - Should we measure the usage of the DS components?
-- Should we measure the usage of the DS patterns?
 - What do we want to measure?
   - Areas
   - Borders
@@ -283,6 +291,18 @@ green pixels / (green pixels + red pixels)
 - It directly measures what the user sees
 
 </v-clicks>
+
+
+<!--
+We decided to count the elements' borders, 
+the visual coverage formula is 
+
+`green pixels / (green pixels + red pixels)`
+
+This gives us a 0-100%, and directly measures what the users see.
+The leadership team liked the idea.
+-->
+
 
 ---
 layout: center
@@ -317,6 +337,16 @@ image: ./assets/images/draw-lines.jpeg
 
 </v-clicks>
 
+
+<!--
+Then we evolved it. 
+Made the visual coverage more meaningful in terms of expressing the DS impact on the users. 
+The components must have different weights because their impact on the UI/UX/accessibility is different. 
+
+This is a manual and subjective process, and it really depends on the Product.
+-->
+
+
 ---
 layout: statement
 ---
@@ -333,6 +363,12 @@ image: ./assets/images/draw-lines.jpeg
 - ### Multiple teams can work on the same pages
 - ### A page coverage must be calculated per team
 
+
+<!--
+Then we needed to split pages by teams, because some pages can be owned by multiple Product teams. 
+
+This is fundamental to identify DS usage issues, and allow Product teams to have a dedicated DS visual coverage percentage, and they can also use it to set their quarterly ORKs.
+-->
 
 </v-clicks>
 
@@ -359,6 +395,11 @@ image: ./assets/images/wip.jpeg
 
 </v-clicks>
 
+<!--
+The initial implementation was quite conventional. 
+We were converting the whole page to a png and then count the pixels. 
+-->
+
 ---
 layout: image-left
 image: ./assets/images/wip.jpeg
@@ -378,6 +419,13 @@ image: ./assets/images/wip.jpeg
 
 </v-clicks>
 
+<!--
+This was a big performance bottleneck. 
+A big page required something like 5 seconds on a high-end device. 
+This was a challenge also for CI pipelines! 
+Calculating the coverage at the end of e2e tests would have costed too much.
+-->
+
 ---
 layout: intro
 ---
@@ -389,6 +437,12 @@ layout: intro
 # ...we change strategy?
 
 </v-clicks>
+
+<!--
+We could make it faster and run it in CI pipelines... 
+Or we could make it even faster and run it... 
+in production, during users' sessions, on their device!
+-->
 
 ---
 layout: image-right
@@ -408,6 +462,10 @@ image: ./assets/images/change-of-strategy.png
 
 </v-clicks>
 
+<!--
+Sounds like a crazy idea? Think about it!
+-->
+
 ---
 layout: image-right
 image: ./assets/images/wip.jpeg
@@ -426,6 +484,13 @@ image: ./assets/images/wip.jpeg
 
 </v-clicks>
 
+
+<!--
+1. Users use all the pages (while E2E tests cover just the happy paths)
+2. Measuring the DS impact on what users's see is 100% aligned with the idea of measuring the impact from a Product perspective!
+3. There's also another huge convenience: by installing it at the root of the website, the DS team was independent! Mot of the times, Platform teams's initiatives depend on Product teams' help, but Product teams are always busy with their OKRs. So being independent is a huge benefit for us.
+-->
+
 ---
 src: ./pages/bitmap-animation.md 
 ---
@@ -435,6 +500,13 @@ layout: statement
 ---
 
 # It's a two-steps process
+
+<!-- 
+Let's look at how we implemented it.
+The DS visual coverage is made of two steps:
+1. Parsing the whole DOM tree to collect element's sizes, and to detect which are generated by DS components
+2. Transforming this tree into a bitmap to calculate the coverage
+-->
 
 ---
 layout: image-left
@@ -469,6 +541,15 @@ image: ./assets/images/wip.jpeg
 
 </v-clicks>
 
+<!--
+Parsing the DOM safely rely on idle callbacks. 
+
+This is the idea:
+1. The browser tells us when it's idle, and how many remaining milliseconds we have
+2. We pause and resume parsing the DOM tree
+3. Sometimes we could calculate the coverage on Frankenstein pages (imagine starting to measure it on a page with an opened modal, and then finishing it when the modal doesn't exist anymore), but on big numbers, this is irrelevant, the only important thing is to leave the UX untouched
+-->
+
 ---
 layout: image-right
 image: ./assets/images/wip.jpeg
@@ -487,6 +568,13 @@ image: ./assets/images/wip.jpeg
 
 </v-clicks>
 
+<!--
+Regarding the bitmap:
+1. We generate a bi-dimensional array that represents the page, with the same screen width and height
+2. We set different "colors" for the "pixels". This is necessary to mimic (even if it's not perfect) the CSS depth logics and count the closest-to-the-user elements
+3. Then we count the pixels
+-->
+
 ---
 layout: image-right
 image: ./assets/images/wip.jpeg
@@ -504,6 +592,15 @@ image: ./assets/images/wip.jpeg
 - ### Run the bitmap drawing in a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Using_web_workers)
 
 </v-clicks>
+
+<!--
+We involved Massimiliano Mantione 
+Yes the one who talked yesterday about the cost of abstractions, who is a former Google Chrome engineer, to help us optimizing the performances even more. 
+Thanks to his suggestions:
+1. The array is not bi-dimensional anymore. A mono-dimensional array optimizes accessing the memory, because there's just one step to find the pixel, instead of two
+2. We use typed arrays to reduce the memory footprint
+3. We refactored our code to be branch-free as much as possible: removing branches (if conditions) allows V8 to translate JS almost to C++, with all the performance benefits.
+-->
 
 ---
 layout: statement
@@ -553,6 +650,24 @@ image: ./assets/images/wip.jpeg
 
 </v-clicks>
 
+<!--
+Were all this efforts needed? Yes! 
+
+During the initial tests, when the code wasn't so optimized, we released the visual coverage to just 1% of the users and 1 of them reported 400 blocking ms 
+This isn't acceptable for a brand that wants to offer the bet possible UX. 
+
+Let's look at it working on Preply.com: for the sake of debugging, some of the DS coverage APIs can be triggered straight from the browser's console. 
+
+Here you can see, for example, that on my student's home page, the coverage is... 
+and there are two different containers (containers are part of the pag assigned to different teams)
+if I go to the search page, the coverage is...
+
+And given it doesn't impact the UX, on Preply we calculate it every 10 minutes on all users connected to our website. 
+
+And we built this dashboard where we can show the company the overall average. 
+
+But, from a DS team perspective, we care more about the coverage per teams and how it goes over time, and the coverage per page.
+-->
 
 ---
 layout: default
