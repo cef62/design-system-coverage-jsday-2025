@@ -1,5 +1,6 @@
 ---
 theme: seriph
+transition: none
 background: ./assets/images/cover_01.jpeg
 title: Design System Visual Coverage
 class: text-center
@@ -19,7 +20,7 @@ favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png'
 
 <div class="text-white">The story of how we measure the impact of our design systems in production!</div>
 
-# <div class="text-white">Design System Visual Coverage</div>
+# <div class="text-white">Design System <span class="text-red">Visual</span> Coverage</div>
 
 <div class="abs-br m-6 text-xl">
   <a href="https://github.com/preply/design-system-visual-coverage" target="_blank" class="slidev-icon-btn">
@@ -39,7 +40,7 @@ layout: statement
 
 # Why
 
-## To measure the DS impact from a Product perspective
+## To measure the <span class="text-red">DS</span> impact from a <span class="text-red">Product</span> perspective
 
 <!--
 Let's start with a 1-min introduction before going into the project details.
@@ -103,15 +104,11 @@ image: ./assets/images/stefano01.jpg
 ### <div class="text-orange">Senior Front-end Engineer</div>
 #### [@Preply](https://preply.com/)
 
-<br />
-<br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
 
-
-- [LinkedIn](https://www.linkedin.com/in/noriste/)
-- [X](https://twitter.com/noriste)
-- [Bluesky](https://bsky.app/profile/noriste.bsky.social)
-- [GitHub](https://github.com/noriste)
-
+[LinkedIn](https://www.linkedin.com/in/noriste/) - [X](https://twitter.com/noriste) - [Bluesky](https://bsky.app/profile/noriste.bsky.social) - [GitHub](https://github.com/noriste)
 
 ---
 layout: image-right
@@ -122,14 +119,11 @@ image: ./assets/images/matteo01.jpg
 ### <div class="text-orange">Frontend Architect</div>
 #### [@WorkWave](https://www.workwave.com/)
 
-<br />
-<br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
+<br /><br /><br /><br />
 
-
-- [LinkedIn](https://www.linkedin.com/in/matteoronchi/)
-- [X](https://twitter.com/cef62)
-- [Bluesky](https://bsky.app/profile/cef62.bsky.social)
-- [GitHub](https://github.com/cef62)
+[LinkedIn](https://www.linkedin.com/in/matteoronchi/) - [X](https://twitter.com/cef62) - [Bluesky](https://bsky.app/profile/cef62.bsky.social) - [GitHub](https://github.com/cef62)
 
 ---
 layout: intro
@@ -608,7 +602,7 @@ image: ./assets/images/wip.jpeg
 
 <v-clicks>
 
-- ### <div class="mb-4">We got help from an expert: **Massimiliano Mantione**</div>
+- ### <div class="mb-4">We got help from an expert: <span class="text-red">Massimiliano Mantione</span></div>
 - ### <div class="mb-4">Transform the array to be <span class="text-red">mono-dimensional</span></div>
 - ### <div class="mb-4">Switch to <span class="text-red">Typed Arrays</span></div>
 - ### <div class="mb-4">Make the code branch-free, removing most conditional statements</div>
@@ -761,7 +755,7 @@ layout: default
 - ### <div class="mb-8">A small <span class="text-red">Swift</span> script extract the available view coordinates</div>
 - ### <div class="mb-2">In the future</div>
   - ### <div class="mb-2">`worklets`</div>
-  - ### <div class="mb-2">`react-stric-dom`</div>
+  - ### <div class="mb-2">`react-strict-dom`</div>
   - ### <div class="mb-2">Could simplify the process</div>
 
 </v-clicks>
@@ -778,4 +772,6 @@ layout: statement
   <img src="./assets/qrcode.png" width="30%" />
 </div>
 
-[grusp.org/agenda](https://grusp.org/agenda)
+[grusp.org/<span class="text-red">agenda</span>](https://grusp.org/agenda)
+
+[Careers at <span class="text-red">Preply</span>](https://preply.com/en/careers) <div style="display: inline-flex; width: 50%;"></div> [Careers at <span class="text-red">WorkWave</span>](https://careers.workwave.com/)
