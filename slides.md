@@ -50,19 +50,23 @@ layout: two-cols
 
 # What
 
-### We measure how much % of a page 
-### is built with DS components.
+<br />
+
+## We measure how much 
+## % of a page is built
+## with DS components. 
 
 ::right::
 
-<SlidevVideo autoplay autoreset='click'>
-  <!-- Anything that can go in an HTML video element. -->
-  <source src="./assets/slowmo1.mov" type="video/mp4" />
+<SlidevVideo autoplay autoreset="click">
+  <source src="/assets/videos/slowmo1.mov" type="video/mp4" />
+  <p>
+    Your browser does not support videos. You may download it
+    <a href="/assets/videos/slowmo1.mov">here</a>.
+  </p>
 </SlidevVideo>
 
 <!--
-MISSING VIDEO BACKGROUND
-
 We built a tool that measures how much a page is built with DS components.
 You can briefly see it in action here, where we color the perimeters of DOM elements and calculate the overall DS impact in percentage.
 -->
@@ -331,3 +335,166 @@ layout: intro
 
 # HOW
 #### Are we doing it
+
+---
+layout: image-left
+image: ./assets/images/wip.jpeg
+---
+
+# First attempt
+<br />
+
+<v-clicks>
+
+- ### Parse the DOM
+- ### Transform the DOM into a tree
+- ### Transform the it into a bitmap
+- ### Count the bitmap pixels
+
+</v-clicks>
+
+---
+layout: image-left
+image: ./assets/images/wip.jpeg
+---
+
+# Did it work?
+<br />
+
+<v-clicks>
+
+- ### Yes!
+- ### But it was slow
+- ### It took up to 5 seconds on a high-end device...
+- ### ...for a single page
+- ### and it was blocking the main thread
+- ### No way to run it on any CI pipeline
+
+</v-clicks>
+
+---
+layout: intro
+---
+
+# What If...
+
+<v-clicks>
+
+# ...we change strategy?
+
+</v-clicks>
+
+---
+layout: image-right
+image: ./assets/images/change-of-strategy.png
+---
+
+# It may sound wild, but...
+<br />
+
+<v-clicks>
+
+- ### If we make the process fast enough
+- ### Without blocking the main thread
+- ### We could run it in production
+- ### Measure the coverage in real time 
+- ### On the users' devices
+
+</v-clicks>
+
+---
+layout: image-right
+image: ./assets/images/wip.jpeg
+---
+
+# A few benefits
+<br />
+
+<v-clicks>
+
+- Users navigate to all the pages (the CI covers mostly happy paths)
+- Measuring what the users see aligns with the business goals
+- More significant data set to collect
+- <div class="text-2xl mt-8 mb-4 text-red">Unexpected bonus</div>
+- Independence from the Product teams
+
+</v-clicks>
+
+---
+src: ./pages/bitmap-animation.md 
+---
+
+---
+layout: statement
+---
+
+# It's a two-steps process
+
+---
+layout: image-left
+image: ./assets/images/wip.jpeg
+---
+
+# Analyze
+<br />
+
+<v-clicks>
+
+- ### Traverse the DOM 
+- ### Collect elements' size and position
+- ### Detect which elements are part of the DS
+
+</v-clicks>
+
+---
+layout: image-left
+image: ./assets/images/wip.jpeg
+---
+
+# Optimize the parser
+<br />
+
+<v-clicks>
+
+- ### Traverse using [Idle Callbacks](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback)
+- ### The browser provides a time window to act
+- ### The parser pause and resume as needed
+- ### The parser accepts incomplete DOM trees
+
+</v-clicks>
+
+---
+layout: image-right
+image: ./assets/images/wip.jpeg
+---
+
+# Draw the bitmap
+<br />
+
+<v-clicks>
+
+- ### Transform the parsed DOM into a bi-dimensional array
+- ### The bitmap has the same size of the viewport
+- ### Pixels are color-coded 
+- ### The closest-to-the-user elements are drawn on top
+- ### A component's weight affects the border thickness
+
+</v-clicks>
+
+---
+layout: image-right
+image: ./assets/images/wip.jpeg
+---
+
+# Bitmap Optimization
+<br />
+
+<v-clicks>
+
+- ### Transform the parsed DOM into a bi-dimensional array
+- ### The bitmap has the same size of the viewport
+- ### Pixels are color-coded 
+- ### The closest-to-the-user elements are drawn on top
+- ### A component's weight affects the border thickness
+
+</v-clicks>
