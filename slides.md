@@ -353,10 +353,9 @@ image: ./assets/images/wip.jpeg
 
 <v-clicks>
 
-- ### Parse the DOM
-- ### Transform the DOM into a tree
-- ### Transform the it into a bitmap
-- ### Count the bitmap pixels
+- ### Color the borders via CSS
+- ### Transform DOM into a PNG
+- ### Count the pixels
 
 </v-clicks>
 
