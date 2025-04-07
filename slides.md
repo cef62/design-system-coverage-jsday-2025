@@ -103,6 +103,7 @@ image: ./assets/images/stefano01.jpg
 
 # Stefano Magni 
 ### <div class="text-orange">Senior Front-end Engineer</div>
+### <div class="text-orange">Design System Tech Lead</div>
 #### [@Preply](https://preply.com/)
 
 <br /><br /><br /><br />
