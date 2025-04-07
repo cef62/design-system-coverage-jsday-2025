@@ -132,7 +132,7 @@ layout: intro
 ---
 
 # WHY
-#### <div class="text-red">are we doing it</div>
+#### <div class="text-red">are we doing it?</div>
 
 ---
 layout: image-left
