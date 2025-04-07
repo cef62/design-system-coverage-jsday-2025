@@ -45,7 +45,7 @@ layout: statement
 <!--
 Let's start with a 1-min introduction before going into the project details.
 
-First of all, why are we doing this? 
+First of all, why are we doing this?
 
 We needed a metric the leadership team could understand and use to compare the Design System investments with other initiatives.
 
@@ -60,9 +60,9 @@ layout: two-cols
 
 <br />
 
-## We measure how much 
+## We measure how much
 ## % of a page is built
-## with DS components. 
+## with DS components.
 
 ::right::
 
@@ -85,8 +85,8 @@ layout: statement
 
 # How
 
-### We calculate the coverage in users' devices 
-### by using <span class="text-red">_idle callbacks_</span>, <span class="text-red">_web workers_</span>, and <span class="text-red">_typed arrays_</span> 
+### We calculate the coverage in users' devices
+### by using <span class="text-red">_idle callbacks_</span>, <span class="text-red">_web workers_</span>, and <span class="text-red">_typed arrays_</span>
 ### without affecting the UX.
 
 <!--
@@ -100,7 +100,7 @@ layout: image-right
 image: ./assets/images/stefano01.jpg
 ---
 
-# Stefano Magni 
+# Stefano Magni
 ### <div class="text-orange">Senior Front-end Engineer</div>
 ### <div class="text-orange">Design System Tech Lead</div>
 #### [@Preply](https://preply.com/)
@@ -120,6 +120,7 @@ image: ./assets/images/matteo01.jpg
 
 # Matteo Ronchi
 ### <div class="text-orange">Frontend Architect</div>
+### <div class="text-orange">Design System Tech Lead</div>
 #### [@WorkWave](https://www.workwave.com/)
 
 <br /><br /><br /><br />
@@ -142,7 +143,7 @@ layout: image-left
 image: ./assets/images2/meeting_01.png
 ---
 
-# Measuring Impact 
+# Measuring Impact
 <br />
 
 <v-clicks>
@@ -152,24 +153,24 @@ image: ./assets/images2/meeting_01.png
 - We saved 100K $ 😍
 - Lifetime value increased by 1% 😍
 
-### <div class="mt-10">DS team</div> 
+### <div class="mt-10">DS team</div>
 - Our shiny button is used 176 times 😥🤔
 
 </v-clicks>
 
 <!--
-We work in DS teams, which are part of the Platform teams. 
+We work in DS teams, which are part of the Platform teams.
 One big difference between Platform teams and Product/Feature teams is how they measure the success of their work.
   - Product teams measure their work in conversions/revenues/money
   - And DS teams?...
---> 
+-->
 
 ---
 layout: image-left
 image: ./assets/images2/meeting_02.png
 ---
 
-# Measuring Impact 
+# Measuring Impact
 <br />
 
 ### Product teams:
@@ -177,7 +178,7 @@ image: ./assets/images2/meeting_02.png
 - We saved 100K $ 😍
 - Lifetime value increased by 1% 😍
 
-### <div class="mt-10">DS team</div> 
+### <div class="mt-10">DS team</div>
 - ~~Our shiny button is used 176 times~~ 🤔
 
 <v-clicks>
@@ -202,15 +203,15 @@ image: ./assets/images2/static-analysis.jpeg
 - ### <div class="mb-4">Identifying the components most used</div>
 - ### <div class="mb-4">Identifying the components requiring the <span class="text-red">most maintenance</span></div>
 
-- ## Those Metrics Are Not helping the leadership 
+- ## Those Metrics Are Not helping the leadership
 
 </v-clicks>
 
 <!--
-Usually, DS teams rely on static analysis. 
-By Statically analyzing the codebases we can tell that our amazing button is used 1000 times... 
+Usually, DS teams rely on static analysis.
+By Statically analyzing the codebases we can tell that our amazing button is used 1000 times...
 
-But this tells nothing to the leadership team! 
+But this tells nothing to the leadership team!
 -->
 
 ---
@@ -230,7 +231,7 @@ image: ./assets/images2/heat-map2.jpeg
 </v-clicks>
 
 <!--
-How are they supposed to be able to compare DS teams with other initiative? 
+How are they supposed to be able to compare DS teams with other initiative?
 How can DS teams prove its value and asl for more investments?
 
 We must be able to tell them how much % of the UI is built with the DS!
@@ -253,7 +254,7 @@ layout: image-right
 image: ./assets/images/brainstorming.jpeg
 ---
 # Requirements
-<br /> 
+<br />
 
 <v-clicks>
 
@@ -309,7 +310,7 @@ image: ./assets/images2/draw-lines1.png
 ```
 green pixels / (green pixels + red pixels)
 ```
-<br /> 
+<br />
 
 <v-clicks>
 
@@ -320,8 +321,8 @@ green pixels / (green pixels + red pixels)
 
 
 <!--
-We decided to count the elements' borders, 
-the visual coverage formula is 
+We decided to count the elements' borders,
+the visual coverage formula is
 
 `green pixels / (green pixels + red pixels)`
 
@@ -364,9 +365,9 @@ image: ./assets/images2/draw-lines2.png
 
 
 <!--
-Then we evolved it. 
-Made the visual coverage more meaningful in terms of expressing the DS impact on the users. 
-The components must have different weights because their impact on the UI/UX/accessibility is different. 
+Then we evolved it.
+Made the visual coverage more meaningful in terms of expressing the DS impact on the users.
+The components must have different weights because their impact on the UI/UX/accessibility is different.
 
 This is a manual and subjective process, and it really depends on the Product.
 -->
@@ -390,7 +391,7 @@ image: ./assets/images2/draw-lines0.png
 
 
 <!--
-Then we needed to split pages by teams, because some pages can be owned by multiple Product teams. 
+Then we needed to split pages by teams, because some pages can be owned by multiple Product teams.
 
 This is fundamental to identify DS usage issues, and allow Product teams to have a dedicated DS visual coverage percentage, and they can also use it to set their quarterly ORKs.
 -->
@@ -420,8 +421,8 @@ layout: default
 </v-clicks>
 
 <!--
-The initial implementation was quite conventional. 
-We were converting the whole page to a png and then count the pixels. 
+The initial implementation was quite conventional.
+We were converting the whole page to a png and then count the pixels.
 -->
 
 ---
@@ -443,9 +444,9 @@ layout: default
 </v-clicks>
 
 <!--
-This was a big performance bottleneck. 
-A big page required something like 5 seconds on a high-end device. 
-This was a challenge also for CI pipelines! 
+This was a big performance bottleneck.
+A big page required something like 5 seconds on a high-end device.
+This was a challenge also for CI pipelines!
 Calculating the coverage at the end of e2e tests would have costed too much.
 -->
 
@@ -462,8 +463,8 @@ layout: intro
 </v-clicks>
 
 <!--
-We could make it faster and run it in CI pipelines... 
-Or we could make it even faster and run it... 
+We could make it faster and run it in CI pipelines...
+Or we could make it even faster and run it...
 in production, during users' sessions, on their device!
 -->
 
@@ -478,9 +479,9 @@ image: ./assets/images/change-of-strategy.png
 <v-clicks>
 
 - ### <div class="mb-4">If we make the process <span class="text-red">fast enough</span></div>
-- ### <div class="mb-4">Without blocking the main thread</div>  
+- ### <div class="mb-4">Without blocking the main thread</div>
 - ### <div class="mb-4">We could run it in <span class="text-red">production</span></div>
-- ### <div class="mb-4">Measure the coverage in <span class="text-red">real time</span></div> 
+- ### <div class="mb-4">Measure the coverage in <span class="text-red">real time</span></div>
 - ### <div class="mb-4">On the users' devices</div>
 
 </v-clicks>
@@ -501,7 +502,6 @@ layout: default
 - ### <div class="mb-4">Users navigate to all the pages (the E2E tests cover mostly happy paths)</div>
 - ### <div class="mb-4">Measuring what the users see aligns with the <span class="text-red">business goals</span></div>
 - ### <div class="mb-4">More significant data set to collect</div>
-- ### <div class="mb-4"><div class="text-2xl text-red">Unexpected bonus</div></div>
 - ### <div class="mb-4">Independence from the Product teams</div>
 
 </v-clicks>
@@ -514,7 +514,7 @@ layout: default
 -->
 
 ---
-src: ./pages/bitmap-animation.md 
+src: ./pages/bitmap-animation.md
 ---
 
 ---
@@ -523,7 +523,7 @@ layout: statement
 
 # It's a <span class="text-red">two-steps</span> process
 
-<!-- 
+<!--
 Let's look at how we implemented it.
 The DS visual coverage is made of two steps:
 1. Parsing the whole DOM tree to collect element's sizes, and to detect which are generated by DS components
@@ -564,7 +564,7 @@ image: ./assets/images2/optimize.jpeg
 </v-clicks>
 
 <!--
-Parsing the DOM safely rely on idle callbacks. 
+Parsing the DOM safely rely on idle callbacks.
 
 This is the idea:
 1. The browser tells us when it's idle, and how many remaining milliseconds we have
@@ -616,8 +616,8 @@ image: ./assets/images2/bitmap2.jpeg
 </v-clicks>
 
 <!--
-We involved Massimiliano Mantione 
-Yes the one who talked yesterday about the cost of abstractions, who is a former Google Chrome engineer, to help us optimizing the performances even more. 
+We involved Massimiliano Mantione
+Yes the one who talked yesterday about the cost of abstractions, who is a former Google Chrome engineer, to help us optimizing the performances even more.
 Thanks to his suggestions:
 1. The array is not bi-dimensional anymore. A mono-dimensional array optimizes accessing the memory, because there's just one step to find the pixel, instead of two
 2. We use typed arrays to reduce the memory footprint
@@ -660,7 +660,7 @@ layout: image-right
 image: ./assets/images2/happy-scientist.jpeg
 ---
 
-# Yes!  
+# Yes!
 <br />
 
 <v-clicks>
@@ -672,20 +672,20 @@ image: ./assets/images2/happy-scientist.jpeg
 </v-clicks>
 
 <!--
-Were all this efforts needed? Yes! 
+Were all this efforts needed? Yes!
 
-During the initial tests, when the code wasn't so optimized, we released the visual coverage to just 1% of the users and 1 of them reported 400 blocking ms 
-This isn't acceptable for a brand that wants to offer the bet possible UX. 
+During the initial tests, when the code wasn't so optimized, we released the visual coverage to just 1% of the users and 1 of them reported 400 blocking ms
+This isn't acceptable for a brand that wants to offer the bet possible UX.
 
-Let's look at it working on Preply.com: for the sake of debugging, some of the DS coverage APIs can be triggered straight from the browser's console. 
+Let's look at it working on Preply.com: for the sake of debugging, some of the DS coverage APIs can be triggered straight from the browser's console.
 
-Here you can see, for example, that on my student's home page, the coverage is... 
+Here you can see, for example, that on my student's home page, the coverage is...
 and there are two different containers (containers are part of the pag assigned to different teams)
 if I go to the search page, the coverage is...
 
-And given it doesn't impact the UX, on Preply we calculate it every 10 minutes on all users connected to our website. 
+And given it doesn't impact the UX, on Preply we calculate it every 10 minutes on all users connected to our website.
 
-And we built this dashboard where we can show the company the overall average. 
+And we built this dashboard where we can show the company the overall average.
 
 But, from a DS team perspective, we care more about the coverage per teams and how it goes over time, and the coverage per page.
 -->
@@ -751,7 +751,7 @@ layout: default
 layout: default
 ---
 
-# What about React Native? 
+# What about React Native?
 <br />
 
 <v-clicks>
