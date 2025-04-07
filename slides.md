@@ -226,7 +226,6 @@ image: ./assets/images2/heat-map2.jpeg
 - ### <div class="mb-4">Measuring the impact on specific pages</div>
 - ### <div class="mb-4">Identifying the pages <span class="text-red">most impacted</span> by the DS</div>
 - ### <div class="mb-4">Provides metrics that can be included in a Company's goals</div>
-- ### <div class="mb-4">Aligning with <span class="text-red">strategic objectives</span></div>
 
 </v-clicks>
 
