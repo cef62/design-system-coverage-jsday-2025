@@ -66,7 +66,6 @@ layout: two-cols
 
 ::right::
 
-<SlidevVideo autoplay autoreset="click">
 <SlidevVideo autoplay autoreset="slide" controls>
   <source src="/assets/videos/slowmo1.mov" type="video/mp4" />
   <p>
