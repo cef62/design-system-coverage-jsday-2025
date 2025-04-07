@@ -67,7 +67,7 @@ layout: two-cols
 ::right::
 
 <SlidevVideo autoplay autoreset="slide" controls>
-  <source src="/assets/videos/slowmo1.mov" type="video/mp4" />
+  <source src="/assets/videos/slowmo2.mov" type="video/mp4" />
   <p>
     Your browser does not support videos. You may download it
     <a href="/assets/videos/slowmo1.mov">here</a>.
