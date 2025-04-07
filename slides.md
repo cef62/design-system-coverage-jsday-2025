@@ -107,9 +107,11 @@ image: ./assets/images/stefano01.jpg
 
 <br /><br /><br /><br />
 <br /><br /><br /><br />
-<br /><br /><br /><br />
 
-[LinkedIn](https://www.linkedin.com/in/noriste/) - [X](https://twitter.com/noriste) - [Bluesky](https://bsky.app/profile/noriste.bsky.social) - [GitHub](https://github.com/noriste)
+- [<span class="text-gray">linkedin/</span>noriste](https://www.linkedin.com/in/noriste/)
+- [<span class="text-gray">x.com/</span>noriste](https://x.com/noriste)
+- [<span class="text-gray">bsky.app/</span>noriste.bsky.social](https://bsky.app/profile/noriste.bsky.social)
+- [<span class="text-gray">github/</span>noriste](https://github.com/noriste)
 
 ---
 layout: image-right
@@ -122,9 +124,11 @@ image: ./assets/images/matteo01.jpg
 
 <br /><br /><br /><br />
 <br /><br /><br /><br />
-<br /><br /><br /><br />
 
-[LinkedIn](https://www.linkedin.com/in/matteoronchi/) - [X](https://twitter.com/cef62) - [Bluesky](https://bsky.app/profile/cef62.bsky.social) - [GitHub](https://github.com/cef62)
+- [<span class="text-gray">linkedin/</span>matteoronchi](https://www.linkedin.com/in/matteoronchi/)
+- [<span class="text-gray">x.com/</span>cef62](https://x.com/cef62)
+- [<span class="text-gray">bsky.app/</span>cef62.bsky.social](https://bsky.app/profile/cef62.bsky.social)
+- [<span class="text-gray">github/</span>cef62](https://github.com/cef62)
 
 ---
 layout: intro
@@ -496,7 +500,7 @@ layout: default
 
 <v-clicks>
 
-- ### <div class="mb-4">Users navigate to all the pages (the CI covers mostly happy paths)</div>
+- ### <div class="mb-4">Users navigate to all the pages (the E2E tests cover mostly happy paths)</div>
 - ### <div class="mb-4">Measuring what the users see aligns with the <span class="text-red">business goals</span></div>
 - ### <div class="mb-4">More significant data set to collect</div>
 - ### <div class="mb-4"><div class="text-2xl text-red">Unexpected bonus</div></div>
@@ -663,7 +667,7 @@ image: ./assets/images2/happy-scientist.jpeg
 
 <v-clicks>
 
-- ### <div class="mb-10">It run in production</div>
+- ### <div class="mb-10">It runs in production</div>
 - ### <div class="mb-10">It gives real <span class="text-red">time data</span></div>
 - ### <div class="mb-10">It provides great <span class="text-red">insights</span> for the Leadership</div>
 
@@ -734,11 +738,14 @@ layout: default
 <v-clicks>
 
 - ### <div class="mb-4">✅ Preply battle tested in production (1+ year)</div>
-- ### <div class="mb-4">✅ Detailed articles: [here](https://dev.to/noriste/visual-coverage-why-and-how-preply-measures-the-impact-of-the-design-system-part-i-3omb) and [here](https://dev.to/noriste/the-implementation-details-of-preplys-design-system-visual-coverage-part-ii-1ao2)</div>
-- ### <div class="mb-4">✅ Open Source the project –[GitHub](https://github.com/preply/design-system-visual-coverage)</div>
+- ### <div class="mb-2">✅ Detailed articles</div>
+  - ### <div class="mb-2">[Visual coverage part 1](https://shorturl.at/FmcXr)</div>
+  - ### <div class="mb-2">[Visual coverage part 2](https://shorturl.at/7Pj5Z)</div>
+  - ### <div class="mb-2">For more articles go to [medium.com/preply-engineering](https://medium.com/preply-engineering)</div>
+- ### <div class="mb-4">✅ Open Source the project</div>
 - ### <div class="mb-4">🚧 Implementing a devtool</div>
 - ### <div class="mb-4">🚧 Scaling it at WorkWave</div>
-- ### <div class="mb-4">🚧 Helping <span class="text-red">Docplanner</span> and <span class="text-red">Monday.com</span> to adopt it</div>
+- ### <div class="mb-4">🚧 Helping <span class="text-red">[docplanner.com](https://www.docplanner.com/)</span> and <span class="text-red">[monday.com](https://monday.com/)</span> to adopt it</div>
 
 </v-clicks>
 
@@ -767,13 +774,16 @@ layout: default
 layout: statement
 ---
 
+## [<span class="text-gray">github.com/preply/</span><span class="text-red">design-system-visual-coverage</span>](https://github.com/preply/design-system-visual-coverage)
+<br />
+
 ## <span class="text-red">Thank you!</span>
 <br />
 
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 1rem;">
-  <img src="./assets/qrcode.png" width="30%" />
+  <img src="./assets/qrcode.png" width="25%" />
 </div>
 
 [grusp.org/<span class="text-red">agenda</span>](https://grusp.org/agenda)
 
-[Careers at <span class="text-red">Preply</span>](https://preply.com/en/careers) <span style="display: inline-flex; width: 50%;"></span> [Careers at <span class="text-red">WorkWave</span>](https://careers.workwave.com/)
+[<span class="text-red">preply</span>.com/en/careers](https://preply.com/en/careers) <span style="display: inline-flex; width: 50%;"></span> [careers.<span class="text-red">workwave</span>.com](https://careers.workwave.com/)
