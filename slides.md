@@ -640,9 +640,9 @@ layout: statement
 layout: default
 ---
 
+- ### <div class="mt-10 mb-10">❌ The initial implementation took `5 blocking seconds` </div>
 <v-clicks>
 
-- ### <div class="mt-10 mb-10">❌ The initial implementation took `5 blocking seconds` </div>
 - ### <div class="mb-10">🚧 The first bitmap-based version took `50 blocking ms`, and `30MB` of memory </div>
 - ### <div class="mb-14">✅ The final version took `35 non-blocking ms`, and `0.3 MB` of memory </div>
 - ### ℹ *The Huawei P9 takes `900 non-blocking ms` on a big page*
@@ -655,9 +655,9 @@ layout: statement
 
 # Was it worth it?
 
+
 ---
-layout: image-right
-image: ./assets/images2/happy-scientist.jpeg
+layout: default
 ---
 
 # Yes!
@@ -665,64 +665,10 @@ image: ./assets/images2/happy-scientist.jpeg
 
 <v-clicks>
 
-- ### <div class="mb-10">It runs in production</div>
-- ### <div class="mb-10">It gives real <span class="text-red">time data</span></div>
-- ### <div class="mb-10">It provides great <span class="text-red">insights</span> for the Leadership</div>
-
-</v-clicks>
-
-<!--
-Were all this efforts needed? Yes!
-
-During the initial tests, when the code wasn't so optimized, we released the visual coverage to just 1% of the users and 1 of them reported 400 blocking ms
-This isn't acceptable for a brand that wants to offer the bet possible UX.
-
-Let's look at it working on Preply.com: for the sake of debugging, some of the DS coverage APIs can be triggered straight from the browser's console.
-
-Here you can see, for example, that on my student's home page, the coverage is...
-and there are two different containers (containers are part of the pag assigned to different teams)
-if I go to the search page, the coverage is...
-
-And given it doesn't impact the UX, on Preply we calculate it every 10 minutes on all users connected to our website.
-
-And we built this dashboard where we can show the company the overall average.
-
-But, from a DS team perspective, we care more about the coverage per teams and how it goes over time, and the coverage per page.
--->
-
----
-layout: default
----
-
-# Advantages
-<br />
-
-<v-clicks>
-
-- ### <div class="mb-4">It can run on any web application</div>
-- ### <div class="mb-4">**Preply** and **WorkWave** use it already</div>
+- ### <div class="mb-4">It can run on any web application (100% plain JS)</div>
 - ### <div class="mb-2">It's <span class="text-red">configurable</span></div>
   - ### <div class="mb-2">You are responsible to identify the DS components</div>
   - ### <div class="mb-4">You are responsible to set the components' weight</div>
-- ### <div class="mb-4">You can split the page into different containers</div>
-- ### <div class="mb-4">It's <span class="text-green">Open Source</span></div>
-
-</v-clicks>
-
----
-layout: default
----
-
-# Things to consider
-<br />
-
-<v-clicks>
-
-- ### <div class="mb-4">Collecting data in production comes with <span class="text-red">some cost</span></div>
-- ### <div class="mb-4">The coverage data change over-time <span class="text-yellow">*(thinks of the stock market)*</span></div>
-- ### <div class="mb-4">It complements static analysis</div>
-- ### <div class="mb-2">It's a <span class="text-red">monitoring</span> metric</div>
-  - ### <div class="mb-4">You can check the trends only after publishing a page</div>
 
 </v-clicks>
 
