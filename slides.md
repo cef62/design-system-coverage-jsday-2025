@@ -297,7 +297,7 @@ image: ./assets/images2/mad-scientist.jpeg
 layout: center
 ---
 
-# We could draw <span class="text-red">lines</span> around the components
+# We decided to draw <span class="text-red">lines</span> around the components
 
 ---
 layout: image-left
@@ -357,8 +357,7 @@ image: ./assets/images2/draw-lines2.png
 
 <v-clicks>
 
-- ### <div class="mb-4">The coverage must express the <span class="text-red">impact</span> on the user</div>
-- ### <div class="mb-4">Components have different weights</div>
+- ### <div class="mb-4">The coverage must express the <span class="text-red">impact</span> on the user (UI/UX/A11y)</div>
 - ### <div class="mb-4">The weight of a component is <span class="text-red">subjective</span> and unique per <span class="text-red">Product</span></div>
 
 </v-clicks>
