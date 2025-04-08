@@ -203,7 +203,7 @@ image: ./assets/images2/static-analysis.jpeg
 - ### <div class="mb-4">Identifying the components most used</div>
 - ### <div class="mb-4">Identifying the components requiring the <span class="text-red">most maintenance</span></div>
 
-- ## Those Metrics Are Not helping the leadership
+- ## Those Metrics Are Not helping the leadership.
 
 </v-clicks>
 
@@ -226,7 +226,7 @@ image: ./assets/images2/heat-map2.jpeg
 
 - ### <div class="mb-4">Measuring the impact on specific pages</div>
 - ### <div class="mb-4">Identifying the pages <span class="text-red">most impacted</span> by the DS</div>
-- ### <div class="mb-4">Provides metrics that can be included in a Company's goals</div>
+- ### <div class="mb-4">Provides metrics that can be included in a Company's goals.</div>
 
 </v-clicks>
 
@@ -261,7 +261,7 @@ image: ./assets/images/brainstorming.jpeg
 - ### <div class="mb-4">It must be visual</div>
 - ### <div class="mb-4">It must be <span class="text-red">easy</span> to understand</div>
 - ### <div class="mb-4">It must not be technical</div>
-- ### <div class="mb-4">It must be <span class="text-red">independent</span> from the Product teams</div>
+- ### <div class="mb-4">It must be <span class="text-red">independent</span> from the Product teams.</div>
 
 </v-clicks>
 
@@ -315,7 +315,7 @@ green pixels / (green pixels + red pixels)
 <v-clicks>
 
 - ### <div class="mt-10 mb-4">It's a percentage value</div>
-- ### <div class="mb-4">It directly measures what the user sees</div>
+- ### <div class="mb-4">It directly measures what the user sees.</div>
 
 </v-clicks>
 
@@ -359,7 +359,7 @@ image: ./assets/images2/draw-lines2.png
 <v-clicks>
 
 - ### <div class="mb-4">The coverage must express the <span class="text-red">impact</span> on the user (UI/UX/A11y)</div>
-- ### <div class="mb-4">The weight of a component is <span class="text-red">subjective</span> and unique per <span class="text-red">Product</span></div>
+- ### <div class="mb-4">The weight of a component is <span class="text-red">subjective</span> and unique per <span class="text-red">Product.</span></div>
 
 </v-clicks>
 
@@ -387,7 +387,7 @@ image: ./assets/images2/draw-lines0.png
 <v-clicks>
 
 - ### <div class="mb-4">Multiple <span class="text-red">teams</span> can work on the same pages</div>
-- ### <div class="mb-4">A page coverage must be calculated per <span class="text-red">team</span></div>
+- ### <div class="mb-4">A page coverage must be calculated per <span class="text-red">team.</span></div>
 
 
 <!--
@@ -416,7 +416,7 @@ layout: default
 
 - ### <div class="mb-4">Color the <span class="text-red">borders</span> via CSS</div>
 - ### <div class="mb-4">Transform DOM into a PNG</div>
-- ### <div class="mb-4">Count the <span class="text-red">pixels</span></div>
+- ### <div class="mb-4">Count the <span class="text-red">pixels.</span></div>
 
 </v-clicks>
 
@@ -439,7 +439,7 @@ layout: default
 - ### <div class="mb-4">It took up to <span class="text-red">5 seconds</span> on a high-end device...</div>
 - ### <div class="mb-4">...for a single page</div>
 - ### <div class="mb-4">and it was <span class="text-red">blocking</span> the main thread</div>
-- ### <div class="mb-4">No way to run it on any CI pipeline</div>
+- ### <div class="mb-4">No way to run it on any CI pipeline.</div>
 
 </v-clicks>
 
@@ -482,7 +482,7 @@ image: ./assets/images/change-of-strategy.png
 - ### <div class="mb-4">Without blocking the main thread</div>
 - ### <div class="mb-4">We could run it in <span class="text-red">production</span></div>
 - ### <div class="mb-4">Measure the coverage in <span class="text-red">real time</span></div>
-- ### <div class="mb-4">On the users' devices</div>
+- ### <div class="mb-4">On the users' devices.</div>
 
 </v-clicks>
 
@@ -502,7 +502,7 @@ layout: default
 - ### <div class="mb-4">Users navigate to all the pages (the E2E tests cover mostly happy paths)</div>
 - ### <div class="mb-4">Measuring what the users see aligns with the <span class="text-red">business goals</span></div>
 - ### <div class="mb-4">More significant data set to collect</div>
-- ### <div class="mb-4">Independence from the Product teams</div>
+- ### <div class="mb-4">Independence from the Product teams.</div>
 
 </v-clicks>
 
@@ -542,7 +542,7 @@ image: ./assets/images2/analyze.jpeg
 
 - ### <div class="mb-4">Traverse the DOM </div>
 - ### <div class="mb-4">Collect elements' size and position</div>
-- ### <div class="mb-4">Detect which elements are part of the DS</div>
+- ### <div class="mb-4">Detect which elements are part of the DS.</div>
 
 </v-clicks>
 
@@ -559,7 +559,7 @@ image: ./assets/images2/optimize.jpeg
 - ### <div class="mb-4">Traverse using [Idle Callbacks](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback)</div>
 - ### <div class="mb-4">The browser provides a time window to act</div>
 - ### <div class="mb-4">The parser <span class="text-red">pauses and resumes</span> as needed</div>
-- ### <div class="mb-4">The parser <span class="text-red">accepts</span> incomplete DOM trees</div>
+- ### <div class="mb-4">The parser <span class="text-red">accepts</span> incomplete DOM trees.</div>
 
 </v-clicks>
 
@@ -586,7 +586,7 @@ image: ./assets/images2/bitmap.jpeg
 - ### <div class="mb-4">The bitmap has the same size of the viewport</div>
 - ### <div class="mb-4">Pixels are <span class="text-red">color-coded</span></div>
 - ### <div class="mb-4">The closest-to-the-user elements are drawn on top</div>
-- ### <div class="mb-4">A component's weight affects the <span class="text-red">border thickness</span></div>
+- ### <div class="mb-4">A component's weight affects the <span class="text-red">border thickness.</span></div>
 
 </v-clicks>
 
@@ -645,7 +645,7 @@ layout: default
 
 - ### <div class="mb-10">🚧 The first bitmap-based version took `50 blocking ms`, and `30MB` of memory </div>
 - ### <div class="mb-14">✅ The final version took `35 non-blocking ms`, and `0.3 MB` of memory </div>
-- ### ℹ *The Huawei P9 takes `900 non-blocking ms` on a big page*
+- ### ℹ *The Huawei P9 takes `900 non-blocking ms` on a big page.*
 
 </v-clicks>
 
@@ -668,7 +668,7 @@ layout: default
 - ### <div class="mb-4">It can run on any web application (100% plain JS)</div>
 - ### <div class="mb-2">It's <span class="text-red">configurable</span></div>
   - ### <div class="mb-2">You are responsible to identify the DS components</div>
-  - ### <div class="mb-4">You are responsible to set the components' weight</div>
+  - ### <div class="mb-4">You are responsible to set the components' weight.</div>
 
 </v-clicks>
 
@@ -689,7 +689,7 @@ layout: default
 - ### <div class="mb-4">✅ Open Source the project</div>
 - ### <div class="mb-4">🚧 Implementing a devtool</div>
 - ### <div class="mb-4">🚧 Scaling it at WorkWave</div>
-- ### <div class="mb-4">🚧 Helping <span class="text-red">[docplanner.com](https://www.docplanner.com/)</span> and <span class="text-red">[monday.com](https://monday.com/)</span> to adopt it</div>
+- ### <div class="mb-4">🚧 Helping <span class="text-red">[docplanner.com](https://www.docplanner.com/)</span> and <span class="text-red">[monday.com](https://monday.com/)</span> to adopt it.</div>
 
 </v-clicks>
 
@@ -709,7 +709,7 @@ layout: default
 - ### <div class="mb-2">In the future</div>
   - ### <div class="mb-2">`worklets`</div>
   - ### <div class="mb-2">`react-strict-dom`</div>
-  - ### <div class="mb-2">Could simplify the process</div>
+  - ### <div class="mb-2">Could simplify the process.</div>
 
 </v-clicks>
 
