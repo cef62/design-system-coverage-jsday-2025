@@ -381,7 +381,7 @@ layout: statement
 
 ---
 layout: image-left
-image: ./assets/images2/draw-lines0.png
+image: ./assets/images2/draw-lines0.jpg
 ---
 
 <v-clicks>
