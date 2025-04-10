@@ -5,7 +5,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step1.png" />
+<img width="270" src="/step1.png" />
 
 DOM parse result
 ```json
@@ -51,7 +51,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step2.png" />
+<img width="270" src="/step2.png" />
 
 DOM parse result
 ```json
@@ -97,7 +97,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step2.png" />
+<img width="270" src="/step2.png" />
 
 DOM parse result
 ```json
@@ -143,7 +143,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step2.png" />
+<img width="270" src="/step2.png" />
 
 DOM parse result
 ```json
@@ -190,7 +190,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step3.png" />
+<img width="270" src="/step3.png" />
 
 DOM parse result
 ```json
@@ -236,7 +236,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step3.png" />
+<img width="270" src="/step3.png" />
 
 DOM parse result
 ```json
@@ -281,7 +281,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step3.png" />
+<img width="270" src="/step3.png" />
 
 DOM parse result
 ```json
@@ -326,7 +326,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step4.png" />
+<img width="270" src="/step4.png" />
 
 DOM parse result
 ```json
@@ -372,7 +372,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step5.png" />
+<img width="270" src="/step5.png" />
 
 DOM parse result
 ```json
@@ -418,7 +418,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step6-1.png" />
+<img width="270" src="/step6-1.png" />
 
 DOM parse result
 ```json
@@ -464,7 +464,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step6-2.png" />
+<img width="270" src="/step6-2.png" />
 
 DOM parse result
 ```json
@@ -509,7 +509,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step6-2.png" />
+<img width="270" src="/step6-2.png" />
 
 DOM parse result
 ```json
@@ -555,7 +555,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step6-2.png" />
+<img width="270" src="/step6-2.png" />
 
 DOM parse result
 ```json
@@ -601,7 +601,7 @@ transition: null
 
 Step by step
 
-<img width="270" src="../assets/step6-2.png" />
+<img width="270" src="/step6-2.png" />
 
 DOM parse result
 ```json

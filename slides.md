@@ -1,7 +1,7 @@
 ---
 theme: seriph
 transition: none
-background: ./assets/images/cover_01.jpeg
+background: /images/cover_01.jpeg
 title: Design System Visual Coverage
 class: text-center
 drawings:
@@ -15,7 +15,7 @@ export:
   dark: true
   withClicks: true
   withToc: false
-favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/assets/favicon.png'
+favicon: 'https://cdn.jsdelivr.net/gh/slidevjs/slidev/favicon.png'
 ---
 
 <div class="text-white">The story of how we measure the impact of our design systems in production!</div>
@@ -67,10 +67,10 @@ layout: two-cols
 ::right::
 
 <SlidevVideo autoplay autoreset="slide" controls>
-  <source src="/assets/videos/slowmo2.mov" type="video/mp4" />
+  <source src="/videos/slowmo2.mov" type="video/mp4" />
   <p>
     Your browser does not support videos. You may download it
-    <a href="/assets/videos/slowmo1.mov">here</a>.
+    <a href="/videos/slowmo1.mov">here</a>.
   </p>
 </SlidevVideo>
 
@@ -97,7 +97,7 @@ In this talk, we will discuss why, what, how, and how you can use our DS visual 
 
 ---
 layout: image-right
-image: ./assets/images/stefano01.jpg
+image: /images/stefano01.jpg
 ---
 
 # Stefano Magni
@@ -115,7 +115,7 @@ image: ./assets/images/stefano01.jpg
 
 ---
 layout: image-right
-image: ./assets/images/matteo01.jpg
+image: /images/matteo01.jpg
 ---
 
 # Matteo Ronchi
@@ -140,7 +140,7 @@ layout: intro
 
 ---
 layout: image-left
-image: ./assets/images2/meeting_01.png
+image: /images2/meeting_01.png
 ---
 
 # Measuring Impact
@@ -167,7 +167,7 @@ One big difference between Platform teams and Product/Feature teams is how they 
 
 ---
 layout: image-left
-image: ./assets/images2/meeting_02.png
+image: /images2/meeting_02.png
 ---
 
 # Measuring Impact
@@ -191,7 +191,7 @@ image: ./assets/images2/meeting_02.png
 
 ---
 layout: image-left
-image: ./assets/images2/static-analysis.jpeg
+image: /images2/static-analysis.jpeg
 ---
 
 # Static Analysis
@@ -216,7 +216,7 @@ But this tells nothing to the leadership team!
 
 ---
 layout: image-left
-image: ./assets/images2/heat-map2.jpeg
+image: /images2/heat-map2.jpeg
 ---
 
 # Visual Coverage
@@ -251,7 +251,7 @@ We made some POCs: should we measure the usage of the DS tokens? Of the DS compo
 
 ---
 layout: image-right
-image: ./assets/images/brainstorming.jpeg
+image: /images/brainstorming.jpeg
 ---
 # Requirements
 <br />
@@ -280,7 +280,7 @@ layout: center
 
 ---
 layout: image-right
-image: ./assets/images2/mad-scientist.jpeg
+image: /images2/mad-scientist.jpeg
 ---
 
 <v-clicks>
@@ -302,7 +302,7 @@ layout: center
 
 ---
 layout: image-left
-image: ./assets/images2/draw-lines1.png
+image: /images2/draw-lines1.png
 ---
 
 ### <div class="mb-4">The visual coverage formula is:</div>
@@ -345,7 +345,7 @@ layout: center
 
 ---
 layout: cover
-background: ./assets/images/component-weight.png
+background: /images/component-weight.png
 ---
 
 # Not all the components' <span class="text-red">weights</span> are the same
@@ -353,7 +353,7 @@ background: ./assets/images/component-weight.png
 
 ---
 layout: image-left
-image: ./assets/images2/draw-lines2.png
+image: /images2/draw-lines2.png
 ---
 
 <v-clicks>
@@ -381,7 +381,7 @@ layout: statement
 
 ---
 layout: image-left
-image: ./assets/images2/draw-lines0.jpg
+image: /images2/draw-lines0.jpg
 ---
 
 <v-clicks>
@@ -470,7 +470,7 @@ in production, during users' sessions, on their device!
 
 ---
 layout: image-right
-image: ./assets/images/change-of-strategy.png
+image: /images/change-of-strategy.png
 ---
 
 # It may sound wild, but...
@@ -514,7 +514,7 @@ layout: default
 -->
 
 ---
-src: ./pages/bitmap-animation.md
+src: ./bitmap-animation.md
 ---
 
 ---
@@ -532,7 +532,7 @@ The DS visual coverage is made of two steps:
 
 ---
 layout: image-left
-image: ./assets/images2/analyze.jpeg
+image: /images2/analyze.jpeg
 ---
 
 # Analyze
@@ -548,7 +548,7 @@ image: ./assets/images2/analyze.jpeg
 
 ---
 layout: image-left
-image: ./assets/images2/optimize.jpeg
+image: /images2/optimize.jpeg
 ---
 
 # Optimize the parser
@@ -574,7 +574,7 @@ This is the idea:
 
 ---
 layout: image-right
-image: ./assets/images2/bitmap.jpeg
+image: /images2/bitmap.jpeg
 ---
 
 # Draw the bitmap
@@ -599,7 +599,7 @@ Regarding the bitmap:
 
 ---
 layout: image-right
-image: ./assets/images2/bitmap2.jpeg
+image: /images2/bitmap2.jpeg
 ---
 
 # Bitmap Optimization
@@ -725,7 +725,7 @@ layout: statement
 <br />
 
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column; gap: 1rem;">
-  <img src="./assets/qrcode.png" width="25%" />
+  <img src="/qrcode.png" width="25%" />
 </div>
 
 [grusp.org/<span class="text-red">agenda</span>](https://grusp.org/agenda)
