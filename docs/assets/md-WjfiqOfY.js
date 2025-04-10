@@ -1,0 +1,22 @@
+import{_ as h}from"./slidev/CodeBlockWrapper.vue_vue_type_script_setup_true_lang-BiWB6Bpf.js";import{b as o,o as d,w as a,g as s,e,m as t,ac as i,v as g,x as u,C as p}from"./modules/vue-11jQKBN7.js";import{_ as c}from"./step2-Bz7XlkeY.js";import{_ as m}from"./slidev/two-cols.vue_vue_type_script_setup_true_lang-Bcg9ZHty.js";import{u as f,f as y}from"./slidev/context-Dot1ySQb.js";import"./modules/unplugin-icons-S-cpLcvI.js";import"./index-C4gpdIU_.js";import"./modules/shiki-YGI5CVOS.js";const _={class:"ml-20"},V={__name:"bitmap-animation.md__slidev_34",setup(A){const{$clicksContext:k,$frontmatter:r}=f();return k.setup(),(v,l)=>{const n=h;return d(),o(m,g(u(p(y)(p(r),33))),{right:a(b=>[s("div",_,[l[2]||(l[2]=s("p",null,"Bitmap",-1)),e(n,t({},{ranges:[]}),{default:a(()=>l[1]||(l[1]=[s("pre",{class:"shiki shiki-themes vitesse-dark vitesse-light slidev-code",style:{"--shiki-dark":"#dbd7caee","--shiki-light":"#393a34","--shiki-dark-bg":"#121212","--shiki-light-bg":"#ffffff"}},[s("code",{class:"language-text"},[s("span",{class:"line"},[s("span",null,"🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️⬛️🟥")]),i(`
+`),s("span",{class:"line"},[s("span",null,"🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥🟥")])])],-1)])),_:1},16)])]),default:a(()=>[l[3]||(l[3]=s("p",null,"Step by step",-1)),l[4]||(l[4]=s("img",{width:"270",src:c},null,-1)),l[5]||(l[5]=s("p",null,"DOM parse result",-1)),e(n,t({},{ranges:[]}),{default:a(()=>l[0]||(l[0]=[s("pre",{class:"shiki shiki-themes vitesse-dark vitesse-light slidev-code",style:{"--shiki-dark":"#dbd7caee","--shiki-light":"#393a34","--shiki-dark-bg":"#121212","--shiki-light-bg":"#ffffff"}},[s("code",{class:"language-json"},[s("span",{class:"line"},[s("span",{style:{"--shiki-dark":"#666666","--shiki-light":"#999999"}},"[")]),i(`
+`),s("span",{class:"line"},[s("span",{style:{"--shiki-dark":"#666666","--shiki-light":"#999999"}},"  {"),s("span",{style:{"--shiki-dark":"#B8A96577","--shiki-light":"#99841877"}},' "'),s("span",{style:{"--shiki-dark":"#B8A965","--shiki-light":"#998418"}},"rect"),s("span",{style:{"--shiki-dark":"#B8A96577","--shiki-light":"#99841877"}},'"'),s("span",{style:{"--shiki-dark":"#666666","--shiki-light":"#999999"}},":"),s("span",{style:{"--shiki-dark":"#666666","--shiki-light":"#999999"}}," ["),s("span",{style:{"--shiki-dark":"#4C9A91","--shiki-light":"#2F798A"}},"0"),s("span",{style:{"--shiki-dark":"#666666","--shiki-light":"#999999"}},","),s("span",{style:{"--shiki-dark":"#4C9A91","--shiki-light":"#2F798A"}}," 0"),s("span",{style:{"--shiki-dark":"#666666","--shiki-light":"#999999"}},","),s("span",{style:{"--shiki-dark":"#4C9A91","--shiki-light":"#2F798A"}}," 20"),s("span",{style:{"--shiki-dark":"#666666","--shiki-light":"#999999"}},","),s("span",{style:{"--shiki-dark":"#4C9A91","--shiki-light":"#2F798A"}}," 16"),s("span",{style:{"--shiki-dark":"#666666","--shiki-light":"#999999"}},"]"),s("span",{style:{"--shiki-dark":"#666666","--shiki-light":"#999999"}}," }")]),i(`
+`),s("span",{class:"line"}),i(`
+`),s("span",{class:"line"}),i(`
+`),s("span",{class:"line"}),i(`
+`),s("span",{class:"line"}),i(`
+`),s("span",{class:"line"},[s("span",{style:{"--shiki-dark":"#666666","--shiki-light":"#999999"}},"]")])])],-1)])),_:1},16)]),_:1},16)}}};export{V as default};
