@@ -3,6 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "postinstall": "npx playwright install --with-deps chromium",
     "build": "slidev build",
     "dev": "slidev --open",
     "export": "slidev export"
